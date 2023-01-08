@@ -53,18 +53,32 @@ button {
 
 .container {
     margin: 0 auto;
-    width: 1200px;
     padding: 0px 15px;
-    /* outline: 2px solid rgb(228, 208, 208);*/
+
 }
 /*------- хедер -------*/
 
 .header {
-    background-color: grey;
+background-color: grey;
+padding: 32px 0px;
+display: flex;
 }
-.logo {
+.header .container {
+	display: flex;
+	align-items: center;
+}
+.header-nav {
+	display: flex;
+	align-items:center;
+}
+.header__logo{
     width: 200px;
     height: 100px;
+	margin-right: 130px;
+}
+.navigation__list {
+	display: flex;
+	column-gap: 30px;
 }
 .navigation__link {
     font-weight: 600;
@@ -74,12 +88,8 @@ button {
     color: #ffffff;
 }
 .header__connect {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #ffffff;
+    margin-left: auto;
+	column-gap: 45px;
 }
 .button {
     font-weight: 600;
@@ -93,24 +103,35 @@ button {
     border: 1px solid #ff6c00;
     border-radius: 25px;
     background-color: transparent;
+	margin-left: 30px;
 }
-.hero__link,
+
+
 .navigation__tell {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    text-transform: uppercase;
     color: #ffffff;
+	text-transform: uppercase;
 }
-.hero__link:hover,
+.navigation__link:hover,
 .hero__link:focus {
     color: #ff6c00;
 }
 
 /*------- головний екран -------*/
-.hero {
+.hero .container {
+	display: flex;
+}
+.hero__content {
     background-color: #757575;
+	padding: 272px 100px 206px 100px;
+    flex-grow:1;
+}
+.hero__link  {
+	letter-spacing: 0.2em;
+	transform: rotate(-90deg);
 }
 
 .pre__title {
@@ -120,6 +141,7 @@ button {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6);
+	margin-bottom: 20px;
 }
 
 .hero__title {
@@ -130,6 +152,10 @@ button {
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: #ffffff;
+	margin-bottom: 20px;
+}
+.hero-title__after {
+	width: 360px;
 }
 .after__title {
     font-weight: 400;
@@ -172,6 +198,7 @@ button {
     letter-spacing: 0.05em;
     color: #303030;
 }
+.hero__link,
 .benefists__text {
     font-weight: 600;
     font-size: 11px;
