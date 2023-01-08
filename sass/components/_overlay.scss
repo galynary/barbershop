@@ -1,0 +1,27 @@
+.work-list__overlay {
+	position: relative;
+
+	.work-list__img {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.work-list__text {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		height: 70px;
+		background-color: rgba(47, 48, 58, 0.8);
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 1.14;
+		align-items: center;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: #fff;
+		width: 100%;
+		left: 0%;
+		bottom: 0;
+	}
+}

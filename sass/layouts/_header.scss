@@ -1,0 +1,259 @@
+/*-------HEADER-------*/
+.header {
+	background-color: #8d8585;
+	display: flex;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	z-index: 2;
+	align-items: center;
+}
+
+.header.container {
+	display: flex;
+	align-items: center;
+}
+
+.header-nav {
+	display: flex;
+	align-items: center;
+}
+
+.icon__logo {
+	display: block;
+	align-items: center;
+	margin-right: 130px;
+	width: 69px;
+	height: 55px;
+}
+
+.navigation__list {
+	display: flex;
+	gap: 30px;
+}
+
+
+.header__connect {
+	display: flex;
+	margin-left: auto;
+	align-items: center;
+}
+
+.navigation__tell,
+.navigation__link {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 00.1em;
+	color: #fff;
+}
+
+.navigation__link:hover,
+.navigation__link:focus {
+	color: #FF6C00;
+}
+
+.navigation__tell {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.1em;
+	color: #fff;
+}
+
+.navigation__btn {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 00.1em;
+	text-transform: uppercase;
+	color: #fff;
+	margin-left: 30px;
+	background-color: transparent;
+	border-color: $accent-color;
+	border-radius: 25px;
+	width: 160px;
+	height: 40px;
+}
+
+/*-------PRICES-------*/
+.prices {
+	background-color: #303030;
+
+	// .prices__title
+
+	.prices-pre__title {
+		color: rgba(157, 164, 189, 0.6);
+	}
+
+	&__title {
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 1.16;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;
+	}
+
+	&__list {}
+
+	// .prices__item
+
+	&__item {}
+
+	.prices-list__text {
+		font-size: 18px;
+		line-height: 1.67;
+		letter-spacing: 0.02;
+		color: $secondary-color;
+	}
+
+	&__btn {
+		font-family: inherit;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 1.33;
+		letter-spacing: 0.09em;
+		text-transform: uppercase;
+		color: #FFFFFF;
+	}
+}
+
+/*-------BENEFISTS-------*/
+.benefists {
+
+	// .benefists__list
+
+	&__list {}
+
+	// .benefists__item
+
+	&__item span {
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 1.35;
+		text-align: center;
+		letter-spacing: 0.05em;
+		color: $titlecolor;
+	}
+
+	&__item sup {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 1.37;
+		text-align: center;
+		letter-spacing: 0.05em;
+		color: $accent-color;
+	}
+
+	// .benefists__text
+
+	&__text {
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 1.31;
+		text-align: center;
+		letter-spacing: 0.05em;
+		color: $titlecolor;
+	}
+
+
+
+
+	&__title {
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 1/16;
+		letter-spacing: 0.05em;
+		color: $titlecolor;
+	}
+
+	.benefists-after__title {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.66;
+		letter-spacing: 0.02em;
+		color: $text-color;
+	}
+}
+
+
+/*-------BARBERS-------*/
+
+.barbers {
+
+	// .barbers__title
+
+	&__title {
+		font-weight: 600;
+		font-size: 11px;
+		line-height: 1.36;
+		text-transform: uppercase;
+		color: $titlecolor;
+	}
+
+	.barbers__title {
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 1.16;
+		letter-spacing: 0.05em;
+		color: $titlecolor;
+	}
+}
+
+
+.barbers-item {
+
+	&__title {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 1.38;
+		text-align: center;
+		letter-spacing: 0.02em;
+		color: $titlecolor;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 1.35;
+		text-align: center;
+		letter-spacing: 0.02em;
+		color: #FF6C00;
+	}
+}
+
+/*-------GALERY-------*/
+.gallery-pre__title {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	text-transform: uppercase;
+	color: $titlecolor;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/*-------CONTACKTS------*/
+.contacts {
+	&__title {
+		font-family: 'Raleway';
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 1.16;
+		letter-spacing: 0.05em;
+		color: #FFFFFF;
+	}
+}

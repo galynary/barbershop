@@ -1,0 +1,57 @@
+/*-------ABOUT-------*/
+
+.about {
+	display: flex;
+}
+
+.about-pre__title {
+	font-weight: 600;
+	font-size: 11px;
+	line-height: 1.36;
+	color: $titlecolor;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.about {
+	&__title {
+		font-weight: 700;
+		font-size: 42px;
+		line-height: 1.16;
+		letter-spacing: 0.05em;
+		color: $titlecolor;
+		margin-bottom: 20px;
+
+	}
+}
+
+.about-after__title {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.67;
+	letter-spacing: 0.02em;
+	color: $text-color;
+	margin-bottom: 20px;
+}
+
+.about__list {
+	display: flex;
+	column-gap: 30px;
+}
+
+.about__text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.85;
+	letter-spacing: 0.02em;
+	color: $text-color;
+}
+
+.about__btn {
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1.33;
+	letter-spacing: 0.09em;
+	color: $text-color;
+	text-transform: uppercase;
+}
