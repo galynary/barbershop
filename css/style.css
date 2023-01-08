@@ -54,31 +54,29 @@ button {
 .container {
     margin: 0 auto;
     padding: 0px 15px;
-
 }
 /*------- хедер -------*/
 
 .header {
-background-color: grey;
-padding: 32px 0px;
-display: flex;
+    padding: 32px 0px;
+    display: flex;
 }
 .header .container {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 .header-nav {
-	display: flex;
-	align-items:center;
+    display: flex;
+    align-items: center;
 }
-.header__logo{
+.header__logo {
     width: 200px;
     height: 100px;
-	margin-right: 130px;
+    margin-right: 130px;
 }
 .navigation__list {
-	display: flex;
-	column-gap: 30px;
+    display: flex;
+    column-gap: 30px;
 }
 .navigation__link {
     font-weight: 600;
@@ -89,7 +87,7 @@ display: flex;
 }
 .header__connect {
     margin-left: auto;
-	column-gap: 45px;
+    column-gap: 45px;
 }
 .button {
     font-weight: 600;
@@ -103,9 +101,8 @@ display: flex;
     border: 1px solid #ff6c00;
     border-radius: 25px;
     background-color: transparent;
-	margin-left: 30px;
+    margin-left: 30px;
 }
-
 
 .navigation__tell {
     font-weight: 600;
@@ -113,7 +110,7 @@ display: flex;
     line-height: 1.33;
     letter-spacing: 0.1em;
     color: #ffffff;
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 .navigation__link:hover,
 .hero__link:focus {
@@ -121,17 +118,26 @@ display: flex;
 }
 
 /*------- головний екран -------*/
-.hero .container {
-	display: flex;
+.hero {
+    display: flex;
+    position: relative;
+    background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2),
+            rgba(25, 28, 38, 0.2)
+        ),
+        url(../images/desctop/Slider\ img\ 1.jpg);
+}
+.hero__list {
+    width: 100px;
+    left: 0px;
 }
 .hero__content {
-    background-color: #757575;
-	padding: 272px 100px 206px 100px;
-    flex-grow:1;
+    padding: 272px 100px 206px 100px;
+    flex-grow: 1;
 }
-.hero__link  {
-	letter-spacing: 0.2em;
-	transform: rotate(-90deg);
+.hero__link {
+    letter-spacing: 0.2em;
+    transform: rotate(-90deg);
 }
 
 .pre__title {
@@ -141,7 +147,7 @@ display: flex;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: rgba(157, 164, 189, 0.6);
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .hero__title {
@@ -152,10 +158,10 @@ display: flex;
     line-height: 1.18;
     letter-spacing: 0.05em;
     color: #ffffff;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .hero-title__after {
-	width: 360px;
+    width: 360px;
 }
 .after__title {
     font-weight: 400;
