@@ -223,6 +223,10 @@ button {
         ),
         url(../images/desctop/img.jpg);
 }
+.services-prices__lists {
+    display: flex;
+    column-gap: 30px;
+}
 .prices-list__text {
     font-weight: 400;
     font-size: 18px;
