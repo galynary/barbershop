@@ -123,11 +123,14 @@ display: flex;
 /*------- головний екран -------*/
 .hero .container {
 	display: flex;
-	background-image: ;
 }
+
 .hero__content {
     background-color: #757575;
+	width: 100%;
 	padding: 272px 100px 206px 100px;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),url(../images/desctop/desctop/Slider\ img\ 1.jpg);
     flex-grow:1;
 }
 .hero__link  {
