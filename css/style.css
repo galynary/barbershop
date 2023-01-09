@@ -131,6 +131,7 @@ display: flex;
 /*------- головний екран -------*/
 .hero .container {
 	display: flex;
+	align-items: center;
 }
 
 .hero__content {
@@ -178,12 +179,20 @@ display: flex;
 }
 
 /*------- про нас -------*/
+.about {
+display: flex;
+column-gap: 30px;	
+}
+.about__content {
+	max-width: 470px;
+}
 .section__title {
     font-weight: 700;
     font-size: 42px;
     line-height: 1.16;
     letter-spacing: 0.05em;
     color: #303030;
+	margin-bottom: 20px;
 }
 .about__text {
     font-weight: 400;
@@ -196,8 +205,16 @@ display: flex;
 	font-family: 'Open Sans';
 	color: #303030;
 }
+.about__list {
+	display: flex;
+	column-gap: 30px;
+}
 
 /*------- сервіс та ціни -------*/
+.prices {
+background-repeat: no-repeat;
+background-image:linear-gradient(rgba(17, 19, 25, 0.7), rgba(17, 19, 25, 1)),url(../images/desctop/desctop/img.jpg);
+}
 .prices-list__text {
     font-weight: 400;
     font-size: 18px;
