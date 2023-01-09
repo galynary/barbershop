@@ -50,6 +50,9 @@ address {
 button {
     cursor: pointer;
 }
+.section {
+    padding: 130px;
+}
 
 .container {
     margin: 0 auto;
@@ -90,7 +93,7 @@ button {
     column-gap: 45px;
 }
 .navigation__btn {
-	color: #ffffff;
+    color: #ffffff;
 }
 .button {
     font-weight: 600;
@@ -108,7 +111,7 @@ button {
 }
 .button:hover,
 .button:focus {
-	background-color: #ff6c00;
+    background-color: #ff6c00;
     color: #ffffff;
 }
 
@@ -127,17 +130,21 @@ button {
 
 /*------- головний екран -------*/
 .hero .container {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .hero__content {
     background-color: #757575;
-	width: 100%;
-	padding: 272px 100px 206px 100px;
-	background-repeat: no-repeat;
-	background-image: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),url(../images/desctop/Slider\ img\ 1.jpg);
-    flex-grow:1;
+    width: 100%;
+    padding: 272px 100px 206px 100px;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+            rgba(25, 28, 38, 0.2),
+            rgba(25, 28, 38, 0.2)
+        ),
+        url(../images/desctop/Slider\ img\ 1.jpg);
+    flex-grow: 1;
 }
 .hero__link {
     letter-spacing: 0.2em;
@@ -177,11 +184,11 @@ button {
 
 /*------- про нас -------*/
 .about {
-display: flex;
-column-gap: 30px;	
+    display: flex;
+    column-gap: 30px;
 }
 .about__content {
-	max-width: 470px;
+    max-width: 470px;
 }
 .section__title {
     font-weight: 700;
@@ -189,7 +196,7 @@ column-gap: 30px;
     line-height: 1.16;
     letter-spacing: 0.05em;
     color: #303030;
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .about__text {
     font-weight: 400;
@@ -199,18 +206,22 @@ column-gap: 30px;
     color: #555555;
 }
 .about__btn {
-	font-family: 'Open Sans';
-	color: #303030;
+    font-family: 'Open Sans';
+    color: #303030;
 }
 .about__list {
-	display: flex;
-	column-gap: 30px;
+    display: flex;
+    column-gap: 30px;
 }
 
 /*------- сервіс та ціни -------*/
 .prices {
-background-repeat: no-repeat;
-background-image:linear-gradient(rgba(17, 19, 25, 0.7), rgba(17, 19, 25, 1)),url(../images/desctop/img.jpg);
+    background-repeat: no-repeat;
+    background-image: linear-gradient(
+            rgba(17, 19, 25, 0.7),
+            rgba(17, 19, 25, 1)
+        ),
+        url(../images/desctop/img.jpg);
 }
 .prices-list__text {
     font-weight: 400;
