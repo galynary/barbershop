@@ -91,19 +91,27 @@ display: flex;
     margin-left: auto;
 	column-gap: 45px;
 }
+.navigation__btn {
+	color: #ffffff;
+}
 .button {
     font-weight: 600;
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #303030;
     width: 160.16px;
     height: 40px;
     border: 1px solid #ff6c00;
     border-radius: 25px;
     background-color: transparent;
 	margin-left: 30px;
+}
+.button:hover,
+.button:focus {
+	background-color: #ff6c00;
+    color: #ffffff;
 }
 
 
@@ -183,6 +191,10 @@ display: flex;
     line-height: 1.85;
     letter-spacing: 0.02em;
     color: #555555;
+}
+.about__btn {
+	font-family: 'Open Sans';
+	color: #303030;
 }
 
 /*------- сервіс та ціни -------*/
