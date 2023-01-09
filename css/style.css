@@ -123,6 +123,7 @@ display: flex;
 /*------- головний екран -------*/
 .hero .container {
 	display: flex;
+	background-image: ;
 }
 .hero__content {
     background-color: #757575;
