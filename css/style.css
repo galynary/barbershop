@@ -232,7 +232,7 @@ address {
 }
 .prices__list {
     padding: 30px 40px;
-    width: calc(50% -15px);
+    width: calc(50% - 15px);
 }
 .prices__item {
     display: flex;
@@ -276,6 +276,9 @@ address {
     display: flex;
     gap: 30px;
 }
+.barbers__item {
+    width: calc((100% - 60px) / 3);
+}
 .barbers-item__title {
     font-weight: 400;
     font-size: 18px;
@@ -296,7 +299,11 @@ address {
 /*------- галарея -------*/
 .gallery__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+}
+.gallery__item {
+    width: calc((100% - 90px) / 4);
 }
 /*------- контакти -------*/
 
