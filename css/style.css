@@ -38,9 +38,7 @@ body {
     color: var(--accent-color);
     justify-content: center;
 }
-.section {
-    padding: 94px 0px;
-}
+
 .link {
     text-decoration: none;
 }
@@ -148,6 +146,12 @@ address {
     letter-spacing: 0.2em;
     transform: rotate(-90deg);
 }
+.pre__hero-title {
+    color: rgba(157, 164, 189, 0.6);
+}
+.pre__hero-title::before {
+    background-color: rgba(157, 164, 189, 0.6);
+}
 
 .pre__title {
     font-weight: 600;
@@ -155,8 +159,15 @@ address {
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.6);
     margin-bottom: 20px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+.pre__title::before {
+    content: '';
+    width: 60px;
+    height: 1px;
 }
 
 .hero__title {
@@ -181,7 +192,11 @@ address {
 }
 
 /*------- про нас -------*/
-.about {
+.about-pre__title {
+    color: #303030;
+}
+.about-pre__title::before {
+    background-color: #303030;
 }
 .about-section {
     display: flex;
@@ -227,6 +242,12 @@ address {
         ),
         url(../images/desctop/img.jpg);
 }
+.prices-pre__title {
+    color: rgba(157, 164, 189, 0.6);
+}
+.prices-pre__title::before {
+    background-color: rgba(157, 164, 189, 0.6);
+}
 .prices__title {
     color: #fff;
 }
@@ -238,10 +259,33 @@ address {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    align-items: baseline;
+}
+.prices__list:first-child {
+    background-image: linear-gradient(
+        180deg,
+        #171a24 0%,
+        rgba(23, 26, 36, 0.2) 100%
+    );
+}
+.prices__list:last-child {
+    background-image: linear-gradient(
+        180deg,
+        #090b13 0%,
+        rgba(9, 11, 19, 0.2) 100%
+    );
+}
+.prices__item::after {
+    content: '';
+    width: 100px;
+    height: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+    flex-grow: 1;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 .services-prices__lists {
     display: flex;
-    justify-content: space-between;
 }
 .prices-list__text {
     font-weight: 400;
@@ -250,14 +294,28 @@ address {
     letter-spacing: 0.02em;
     color: #9da4bd;
 }
+.prices-list__text:last-child {
+    order: 1;
+}
 
 /*------- наші переваги -------*/
+.benefists-pre__title {
+    color: #303030;
+}
+.benefists-pre__title::before {
+    background-color: #303030;
+}
 .benefists__item {
     font-size: 42px;
     line-height: 1.35;
     text-align: center;
     letter-spacing: 0.05em;
     color: #303030;
+    display: inline-block;
+    width: 170px;
+    height: 133px;
+    padding: 20px 24px;
+    background-color: #9da4bd;
 }
 .hero__link,
 .benefists__text {
@@ -269,6 +327,12 @@ address {
 }
 
 /*------- наші працівники -------*/
+.barbers-pre__title {
+    color: #303030;
+}
+.barbers-pre__title::before {
+    background-color: #303030;
+}
 .barbers__title {
     margin-bottom: 44px;
 }
@@ -279,12 +343,25 @@ address {
 .barbers__item {
     width: calc((100% - 60px) / 3);
 }
+.barbers__wrap {
+    padding-top: 30px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
 .barbers-item__title {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.38;
     text-align: center;
     letter-spacing: 0.02em;
+    color: #303030;
+}
+.benefists__item span {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: calc(57 / 42);
+    text-align: center;
+    letter-spacing: 0.05em;
     color: #303030;
 }
 .barbers-item__text {
@@ -297,6 +374,12 @@ address {
 }
 
 /*------- галарея -------*/
+.gallery-pre__title {
+    color: #303030;
+}
+.gallery-pre__title::before {
+    background-color: #303030;
+}
 .gallery__list {
     display: flex;
     flex-wrap: wrap;
