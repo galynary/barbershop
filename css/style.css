@@ -47,11 +47,27 @@ body {
 address {
     font-style: normal;
 }
-button {
+.button {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: #fff;
+    width: 160.16px;
+    height: 40px;
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
+    background-color: transparent;
     cursor: pointer;
+    margin-top: 45px;
+}
+.button:hover,
+.button:focus {
+    background-color: #ff6c00;
 }
 .section {
-    padding: 130px;
+    padding: 130px 0px;
 }
 
 .container {
@@ -93,26 +109,8 @@ button {
     column-gap: 45px;
 }
 .navigation__btn {
-    color: #ffffff;
-}
-.button {
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 1.33;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: #303030;
-    width: 160.16px;
-    height: 40px;
-    border: 1px solid #ff6c00;
-    border-radius: 25px;
-    background-color: transparent;
+    margin-top: 0px;
     margin-left: 30px;
-}
-.button:hover,
-.button:focus {
-    background-color: #ff6c00;
-    color: #ffffff;
 }
 
 .navigation__tell {
@@ -136,7 +134,7 @@ button {
 
 .hero__content {
     background-color: #757575;
-    width: 100%;
+    width: 1200px;
     padding: 272px 100px 206px 100px;
     background-repeat: no-repeat;
     background-image: linear-gradient(
@@ -184,8 +182,10 @@ button {
 
 /*------- про нас -------*/
 .about {
+}
+.about-section {
     display: flex;
-    column-gap: 30px;
+    column-gap: 40px;
 }
 .about__content {
     max-width: 470px;
@@ -206,9 +206,13 @@ button {
     color: #555555;
 }
 .about__btn {
-    font-family: 'Open Sans';
     color: #303030;
 }
+.about__btn:hover,
+.about__btn:focus {
+    color: #fff;
+}
+
 .about__list {
     display: flex;
     column-gap: 30px;
@@ -223,9 +227,21 @@ button {
         ),
         url(../images/desctop/img.jpg);
 }
+.prices__title {
+    color: #fff;
+}
+.prices__list {
+    padding: 30px 40px;
+    width: calc(50% -15px);
+}
+.prices__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
 .services-prices__lists {
     display: flex;
-    column-gap: 30px;
+    justify-content: space-between;
 }
 .prices-list__text {
     font-weight: 400;
@@ -253,6 +269,13 @@ button {
 }
 
 /*------- наші працівники -------*/
+.barbers__title {
+    margin-bottom: 44px;
+}
+.barbers__list {
+    display: flex;
+    gap: 30px;
+}
 .barbers-item__title {
     font-weight: 400;
     font-size: 18px;
@@ -270,6 +293,11 @@ button {
     color: #ff6c00;
 }
 
+/*------- галарея -------*/
+.gallery__list {
+    display: flex;
+    gap: 30px;
+}
 /*------- контакти -------*/
 
 .contacts__address {
