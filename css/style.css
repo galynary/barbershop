@@ -125,6 +125,10 @@ address {
 }
 
 /*------- головний екран -------*/
+
+.hero {
+
+}
 .hero .container {
     display: flex;
     align-items: center;
@@ -182,13 +186,15 @@ address {
 }
 .hero-title__after {
     width: 360px;
+	color: #9da4bd;
 }
+
 .after__title {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.66;
     letter-spacing: 0.02em;
-    color: #9da4bd;
+ 
 }
 
 /*------- про нас -------*/
@@ -197,6 +203,9 @@ address {
 }
 .about-pre__title::before {
     background-color: #303030;
+}
+.after__title-about {
+	color: #555555;
 }
 .about-section {
     display: flex;
@@ -302,29 +311,48 @@ address {
 }
 
 /*------- наші переваги -------*/
+.benefists .container {
+	display: flex;
+}
+.benefist__contant {
+	max-width: 500px;
+	padding-top: 9px;
+}
+.benefists__card {
+width: calc(50% - 15px);
+display: flex;
+justify-content: center;
+margin-right: 30px;
+}
 .benefists-pre__title {
     color: #303030;
 }
 .benefists-pre__title::before {
     background-color: #303030;
 }
+.benefists-after__title {
+	color: #555555;
+}
 .benefists__list {
     display: flex;
     width: 370px;
     flex-wrap: wrap;
-    gap: 30px;
+   
 }
-.benefists__item {
+.benefists__item span {
+	font-weight: 700;
     font-size: 42px;
     line-height: 1.35;
     text-align: center;
     letter-spacing: 0.05em;
     color: #303030;
+}
+.benefists__item {
     display: inline-block;
     width: 170px;
     height: 133px;
     padding: 20px 24px;
-    background-color: #9da4bd;
+    background-color: #F7F7F7;
     margin-bottom: 6px;
 }
 .benefists__item:nth-child(even) {
@@ -384,14 +412,7 @@ address {
     letter-spacing: 0.02em;
     color: #303030;
 }
-.benefists__item span {
-    font-weight: 700;
-    font-size: 42px;
-    line-height: calc(57 / 42);
-    text-align: center;
-    letter-spacing: 0.05em;
-    color: #303030;
-}
+
 .barbers-item__text {
     font-weight: 400;
     font-size: 14px;
@@ -417,18 +438,56 @@ address {
     width: calc((100% - 90px) / 4);
 }
 /*------- контакти -------*/
-
-.contacts__address {
-    font-weight: 700;
+.form {
+	padding-bottom: 183px;
 }
-.contacts__address,
+.contacts {
+	padding-bottom: 120px;
+}
+.contact-wrap {
+	background-color: #191C26;
+}
+.contact-wrap .container {
+	display: flex;
+}
+.contacts__title,
+.form__title {
+	color: #fff;
+}
+.contacts__address {
+	margin-bottom: 70px;
+}
+.contacts__title {
+	margin-bottom: 40px;
+}
+.contacts-time__title {
+	color: #fff;
+}
+.contacts-time__title::before {
+	background-color: #9da4bd;
+}
+.contakts__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+.contacts__address-link {
+    font-weight: 700;
+	display: block;
+	margin-bottom: 20px;
+}
+.contacts__address-link,
 .contacts__tell,
 .contacts__mail,
-.contacts__text {
-    font-weight: 400;
+.contacts-time__text {
     font-size: 18px;
     line-height: 1.66;
     letter-spacing: 0.02em;
-    text-decoration-line: underline;
     color: #9da4bd;
+}
+.contacts__mail {
+	text-decoration-line: underline;
+}
+.contacts__tell,
+.contacts__mail,
+.contacts-time__text {
+	font-weight: 400;
 }
