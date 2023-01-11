@@ -297,6 +297,9 @@ address {
 .prices-list__text:last-child {
     order: 1;
 }
+.prices__btn {
+    align-items: center;
+}
 
 /*------- наші переваги -------*/
 .benefists-pre__title {
