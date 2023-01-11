@@ -308,6 +308,12 @@ address {
 .benefists-pre__title::before {
     background-color: #303030;
 }
+.benefists__list {
+    display: flex;
+    width: 370px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 .benefists__item {
     font-size: 42px;
     line-height: 1.35;
@@ -319,6 +325,25 @@ address {
     height: 133px;
     padding: 20px 24px;
     background-color: #9da4bd;
+    margin-bottom: 6px;
+}
+.benefists__item:nth-child(even) {
+    margin-top: 30px;
+}
+.benefists__item:nth-child(odd) {
+    margin-right: 30px;
+}
+.benefists-item__top {
+    display: flex;
+    justify-content: center;
+}
+.benefists__item sup {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 0.2;
+    margin-top: 25px;
+    color: #ff6c00;
+    text-align: center;
 }
 .hero__link,
 .benefists__text {
