@@ -441,15 +441,20 @@ address {
 .form {
     width: calc(50% - 15px);
 }
+.contacts {
+    padding-left: 100px;
+}
 
 .contact-wrap {
     background-color: #191c26;
-    border-image: url(../images/desctop/Bg.jpg);
+    border-image: url(../images/desctop/Bg.png);
     background-repeat: no-repeat;
     background-position: right;
     background-size: calc(50% - 15px) 100%;
     max-width: 1600px;
     margin: 0 auto;
+    z-index: 1;
+    padding: 130px 0px;
 }
 .contact-wrap .container {
     display: flex;
