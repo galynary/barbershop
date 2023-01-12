@@ -127,7 +127,6 @@ address {
 /*------- головний екран -------*/
 
 .hero {
-
 }
 .hero .container {
     display: flex;
@@ -139,6 +138,7 @@ address {
     width: 1200px;
     padding: 272px 100px 206px 100px;
     background-repeat: no-repeat;
+    background-size: cover;
     background-image: linear-gradient(
             rgba(25, 28, 38, 0.2),
             rgba(25, 28, 38, 0.2)
@@ -148,7 +148,7 @@ address {
 }
 .hero__link {
     letter-spacing: 0.2em;
-    transform: rotate(-90deg);
+    transform: rotate(180deg);
 }
 .pre__hero-title {
     color: rgba(157, 164, 189, 0.6);
@@ -186,7 +186,7 @@ address {
 }
 .hero-title__after {
     width: 360px;
-	color: #9da4bd;
+    color: #9da4bd;
 }
 
 .after__title {
@@ -194,7 +194,6 @@ address {
     font-size: 18px;
     line-height: 1.66;
     letter-spacing: 0.02em;
- 
 }
 
 /*------- про нас -------*/
@@ -205,7 +204,7 @@ address {
     background-color: #303030;
 }
 .after__title-about {
-	color: #555555;
+    color: #555555;
 }
 .about-section {
     display: flex;
@@ -245,6 +244,7 @@ address {
 /*------- сервіс та ціни -------*/
 .prices {
     background-repeat: no-repeat;
+    background-size: cover;
     background-image: linear-gradient(
             rgba(17, 19, 25, 0.7),
             rgba(17, 19, 25, 1)
@@ -312,17 +312,17 @@ address {
 
 /*------- наші переваги -------*/
 .benefists .container {
-	display: flex;
+    display: flex;
 }
 .benefist__contant {
-	max-width: 500px;
-	padding-top: 9px;
+    max-width: 500px;
+    padding-top: 9px;
 }
 .benefists__card {
-width: calc(50% - 15px);
-display: flex;
-justify-content: center;
-margin-right: 30px;
+    width: calc(50% - 15px);
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
 }
 .benefists-pre__title {
     color: #303030;
@@ -331,16 +331,15 @@ margin-right: 30px;
     background-color: #303030;
 }
 .benefists-after__title {
-	color: #555555;
+    color: #555555;
 }
 .benefists__list {
     display: flex;
     width: 370px;
     flex-wrap: wrap;
-   
 }
 .benefists__item span {
-	font-weight: 700;
+    font-weight: 700;
     font-size: 42px;
     line-height: 1.35;
     text-align: center;
@@ -352,7 +351,7 @@ margin-right: 30px;
     width: 170px;
     height: 133px;
     padding: 20px 24px;
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
     margin-bottom: 6px;
 }
 .benefists__item:nth-child(even) {
@@ -438,41 +437,41 @@ margin-right: 30px;
     width: calc((100% - 90px) / 4);
 }
 /*------- контакти -------*/
+.contacts,
 .form {
-	padding-bottom: 183px;
+    width: calc(50% - 15px);
 }
-.contacts {
-	padding-bottom: 120px;
-}
+
 .contact-wrap {
-	background-color: #191C26;
+    background-color: #191c26;
+    padding: 130px 0px;
 }
 .contact-wrap .container {
-	display: flex;
+    display: flex;
 }
 .contacts__title,
 .form__title {
-	color: #fff;
+    color: #fff;
 }
 .contacts__address {
-	margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 .contacts__title {
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 .contacts-time__title {
-	color: #fff;
+    color: #fff;
 }
 .contacts-time__title::before {
-	background-color: #9da4bd;
+    background-color: #9da4bd;
 }
 .contakts__item:not(:last-child) {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 .contacts__address-link {
     font-weight: 700;
-	display: block;
-	margin-bottom: 20px;
+    display: block;
+    margin-bottom: 20px;
 }
 .contacts__address-link,
 .contacts__tell,
@@ -484,10 +483,10 @@ margin-right: 30px;
     color: #9da4bd;
 }
 .contacts__mail {
-	text-decoration-line: underline;
+    text-decoration-line: underline;
 }
 .contacts__tell,
 .contacts__mail,
 .contacts-time__text {
-	font-weight: 400;
+    font-weight: 400;
 }
