@@ -402,6 +402,7 @@ address {
     padding-top: 30px;
     padding-right: 5px;
     padding-left: 5px;
+	margin-bottom: 30px;
 }
 .barbers-item__title {
     font-weight: 400;
@@ -410,6 +411,7 @@ address {
     text-align: center;
     letter-spacing: 0.02em;
     color: #303030;
+	margin-bottom: 30px;
 }
 
 .barbers-item__text {
@@ -419,6 +421,18 @@ address {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ff6c00;
+}
+.barbers__social {
+	display: flex;
+	justify-content: center;
+	gap:10px;
+}
+.barbers-social__link {
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background-color: turquoise;
+	display: block;
 }
 
 /*------- галарея -------*/
