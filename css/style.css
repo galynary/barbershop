@@ -30,11 +30,13 @@ ul {
     padding: 0;
     list-style: none;
 }
+
 .img {
     display: block;
     max-width: 100%;
     height: auto;
 }
+
 .list {
     list-style-type: none;
     padding: 0;
@@ -70,7 +72,13 @@ address {
 }
 .button:hover,
 .button:focus {
-    background-color: inherit;
+    background-color: var(--accent-color);
+    transform: scale(1.06);
+    transition-duration: 700ms;
+}
+
+.about__btn:hover,
+.about__btn:focus {
 }
 .section {
     padding: 130px 0px;
@@ -102,22 +110,29 @@ address {
     position: absolute;
     width: 100%;
     padding: 32px 0px;
-    width: 1200px;
 }
 .header .container {
-    display: flex;
-    align-items: center;
+    /*  display: flex;
+    align-items: center;*/
 }
 .header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0px 25px;
 }
 .header__logo {
     margin-right: 130px;
 }
 .icon__logo {
     display: block;
+    width: 72px;
+    height: 59px;
+}
+.icon__logo:focus,
+.icon__logo:hover {
+    transform: rotate(720deg);
+    transition-duration: 5000ms;
 }
 .navigation__list {
     display: flex;
@@ -139,15 +154,15 @@ address {
     margin-left: auto;
     gap: 30px;
     align-items: center;
-    justify-content: space-between;
+    margin-left: 200px;
 }
 .navigation__btn {
     margin-top: 0px;
 }
 .navigation__btn:hover,
 .navigation__btn:focus {
-    background-color: var(--accent-color);
     color: var(--white-color);
+    transform: scale3d(2);
 }
 
 .navigation__tell {
@@ -163,11 +178,12 @@ address {
 
 .hero {
     padding-top: 0px;
+    width: 100%;
 }
 .hero__soc {
     display: flex;
     width: 100px;
-    align-items: flex-start;
+    align-items: flex-end;
     padding-left: 27px;
 }
 .hero__list {
@@ -177,7 +193,7 @@ address {
     letter-spacing: 0.2em;
     transform: rotate(-90deg) translateY(100%);
     transform-origin: bottom left;
-    align-items: flex-end;
+    justify-content: flex-end;
 }
 .hero__list::before {
     content: '';
@@ -191,12 +207,13 @@ address {
 }
 .hero .container {
     display: flex;
-    align-items: center;
 }
 
 .hero__content {
     background-color: #757575;
-    width: 1200px;
+    width: 100%;
+    margin-left: 50px;
+    max-width: 1070px;
     padding: 272px 100px 206px 100px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -289,9 +306,14 @@ address {
 .about__btn {
     color: var(--main-color);
 }
+
 .about__btn:hover,
 .about__btn:focus {
     color: var(--white-color);
+    background-color: var(--accent-color);
+    transform: rotate(180deg);
+    transition-delay: 0ms;
+    transition-duration: 1500ms;
 }
 
 .about__list {
@@ -363,9 +385,6 @@ address {
 }
 .prices-list__text:last-child {
     order: 1;
-}
-.prices__btn {
-    align-items: center;
 }
 
 /*------- наші переваги -------*/
@@ -563,7 +582,7 @@ address {
     position: absolute;
     display: inline-block;
     width: 500px;
-    min-height: 600px;
+    height: auto;
     background-color: #fff;
     border-radius: 10px;
     top: 50%;
@@ -601,6 +620,100 @@ address {
     letter-spacing: 0.03em;
     color: #212121;
     margin-bottom: 12px;
+}
+.form-list {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.form__item {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.form__item:not(:last-child) {
+    margin-bottom: 12px;
+}
+.form__label {
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    text-align: left;
+}
+.form__input {
+    position: relative;
+}
+.input {
+    width: 100%;
+    height: 100%;
+    padding: 14px 14px;
+    padding-left: 15px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__icon-input {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    display: inline-block;
+    transform: translateY(-50%);
+    transition: fill 250ms linear,
+        transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__checkbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.checkbox__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+.checkbox__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.checkbox__icon {
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 16px;
+    height: 15px;
+    background-color: #fff;
+    border: 2px solid #212121;
+    margin-right: 10px;
+    border-radius: 2px;
+    transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+}
+.checkbox__link {
+    color: var(--accent-color);
+    text-decoration: underline;
+    margin-left: 4px;
+}
+.form__button {
+    color: var(--main-color);
+    overflow: hidden;
+    transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1),
+        transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*------- галарея -------*/
