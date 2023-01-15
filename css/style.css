@@ -643,8 +643,20 @@ address {
     color: #757575;
     text-align: left;
 }
-.form__input {
-    position: relative;
+
+.input:not(:focus):not(:placeholder-shown):valid {
+    border-color: green;
+}
+.input:not(:focus):not(:placeholder-shown):invalid + .error {
+    display: block;
+}
+.input:not(:focus):not(:placeholder-shown):invalid {
+    border-color: red;
+}
+
+.error {
+    display: none;
+    border-color: red;
 }
 .input {
     width: 100%;
@@ -690,6 +702,7 @@ address {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
+
 .checkbox__icon {
     display: inline-block;
     justify-content: center;
