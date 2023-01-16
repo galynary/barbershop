@@ -629,11 +629,20 @@
                 </section>
                 <div class="contact-wrap">
                     <div class="container">
-                        <form class="form">
+                        <section class="contacts__form">
                             <h2 class="section__title form__title">
                                 Online-booking
                             </h2>
-                        </form>
+                            <form class="online__form">
+                                <input type = "text" name="online__name"
+                                class="online__input" placeholder="Name*/>
+                                <input type ="text" class="online__input"
+                                placeholder="Phone*/> <textarea
+                                name="online__text"
+                                aria-placeholder="Message"/textarea> <button
+                                type="button" class="online__button"
+                            </form>
+                        </section>
                         <section class="contacts">
                             <h2 class="section__title contacts__title">
                                 Contacts
@@ -750,7 +759,7 @@
                                     </svg>
                                 </span>
                             </div>
-                            <!--<p class="error">Поле не заповнене</p>-->
+                            <p class="error">Поле не заповнене</p>
                         </div>
                         <div class="form__item">
                             <label for="mail" class="form__label">Пошта</label>
