@@ -771,24 +771,72 @@ address {
     width: calc((100% - 90px) / 4);
 }
 /*------- онлайн-форм -------*/
+.online__form {
+}
 .contacts__form {
     width: calc(50% - 15px);
     margin-right: 30px;
+}
+.form__title {
+    margin-bottom: 44px;
+}
+.online__textarea {
+    width: 570px;
+    height: 24px;
+    border: none;
+    border-bottom: 1px solid var(--minor-color);
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: var(--text-font-size);
+    outline: none;
+    margin-bottom: 44px;
+}
+.online__textarea:hover,
+.online__textarea:focus {
+    border-bottom: 1px solid var(--white-color);
+}
+.online__textarea::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
+}
+
+.online__input {
+    width: 270px;
+    height: 24px;
+    border: none;
+    border-bottom: 1px solid var(--minor-color);
+    background-color: transparent;
+    color: var(--white-color);
+    font-size: var(--text-font-size);
+    outline: none;
+    margin-bottom: 44px;
+}
+.online__input:hover,
+.online__input:focus {
+    border-bottom: 1px solid var(--white-color);
+}
+
+.online__input:focus::placeholder {
+    color: var(--white-color);
+}
+
+.online__input::placeholder {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(157, 164, 189, 0.4);
 }
 
 /*------- контакти -------*/
 .contacts {
     width: calc(50% - 15px);
     padding-left: 100px;
-}
-.form__title {
-    margin-bottom: 44px;
-}
-.online__input {
-    width: 270px;
-    height: 24px;
-    border: none;
-    border-bottom: 1px solid #000;
 }
 
 .contact-wrap {
