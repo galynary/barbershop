@@ -3,6 +3,7 @@
     --white-color: #fff;
     --main-color: #303030;
     --second-main-color: #555555;
+    --minor-color: #9da4bd;
     --pre__title-font-size: 11px;
     --section-title-font-size: 42px;
     --after-title-font-size: 18px;
@@ -69,6 +70,7 @@ address {
     background-color: transparent;
     cursor: pointer;
     margin-top: 45px;
+    transition: var(--transition);
 }
 .button:hover,
 .button:focus {
@@ -158,11 +160,35 @@ address {
 }
 .navigation__btn {
     margin-top: 0px;
+    overflow: hidden;
+    transition: var(--transition);
 }
+
 .navigation__btn:hover,
 .navigation__btn:focus {
     color: var(--white-color);
-    transform: scale3d(2);
+
+    /* transform: scale3d(2);*/
+}
+.ripple {
+    overflow: hidden;
+    z-index: 1;
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    background-color: #e2aa0fd0;
+    border-color: var(--accent-color);
+    animation: button-circle 2s ease forwards;
+}
+@keyframes button-circle {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(20);
+        opacity: 0;
+    }
 }
 
 .navigation__tell {
@@ -744,13 +770,25 @@ address {
 .gallery__item {
     width: calc((100% - 90px) / 4);
 }
-/*------- контакти -------*/
-.contacts,
-.form {
+/*------- онлайн-форм -------*/
+.contacts__form {
     width: calc(50% - 15px);
+    margin-right: 30px;
 }
+
+/*------- контакти -------*/
 .contacts {
+    width: calc(50% - 15px);
     padding-left: 100px;
+}
+.form__title {
+    margin-bottom: 44px;
+}
+.online__input {
+    width: 270px;
+    height: 24px;
+    border: none;
+    border-bottom: 1px solid #000;
 }
 
 .contact-wrap {
