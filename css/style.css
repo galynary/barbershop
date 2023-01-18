@@ -784,9 +784,10 @@ address {
 .form__title {
     margin-bottom: 44px;
 }
-/*.online__textarea {
+.online__textarea {
     width: 570px;
-    height: 24px;
+    height: 76px;
+    resize: none;
     border: none;
     border-bottom: 1px solid var(--minor-color);
     background-color: transparent;
@@ -806,7 +807,7 @@ address {
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: rgba(157, 164, 189, 0.4);
-}*/
+}
 .online__massege {
     width: 100%;
     height: 76px;
