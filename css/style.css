@@ -80,7 +80,7 @@ address {
 }
 
 .section {
-    padding: 130px 0px;
+    padding: 110px 0px;
 }
 
 .container {
@@ -411,6 +411,10 @@ address {
 }
 .prices-list__text:last-child {
     order: 1;
+}
+.prices__btn {
+    display: inline-block;
+    align-items: center;
 }
 
 /*------- наші переваги -------*/
@@ -773,6 +777,11 @@ address {
 }
 .gallery__item {
     width: calc((100% - 90px) / 4);
+}
+.gallery__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 /*------- онлайн-форм -------*/
 .online__form {
