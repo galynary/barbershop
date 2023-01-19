@@ -80,9 +80,6 @@ address {
     box-shadow: 0px 0px 10px 1px rgba(255, 108, 0, 0.55);
 }
 
-.about__btn:hover,
-.about__btn:focus {
-}
 .section {
     padding: 130px 0px;
 }

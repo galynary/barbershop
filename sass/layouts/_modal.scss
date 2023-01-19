@@ -1,904 +1,870 @@
 .modal {
-	display: inline-block;
-	position: fixed;
-	right: auto;
-	top: 105px;
-	transform: translateX(-50%);
-	background: $primary-white-color;
-	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-		0px 2px 1px rgba(0, 0, 0, 0.2);
-	border-radius: 4px;
-	max-width: 450px;
-	width: 100vw;
-	padding: 40px;
-	margin: 0 auto;
-	background-color: $primary-white-color;
-	align-items: center;
-	justify-content: center;
-	z-index: 2;
-	transition: transform $transion;
+    display: inline-block;
+    position: fixed;
+    right: auto;
+    top: 105px;
+    transform: translateX(-50%);
+    background: $white-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    max-width: 450px;
+    width: 100vw;
+    padding: 40px;
+    margin: 0 auto;
+    background-color: $white-color;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: transform $transion;
 }
 
 .modal__button {
-	position: absolute;
-	cursor: pointer;
-	margin: 0 auto;
-	top: 8px;
-	right: 8px;
-	width: 30px;
-	height: 30px;
-	background-color: transparent;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	border-radius: 50%;
-	transition: backround-color $transion,
-		transform $transion;
+    position: absolute;
+    cursor: pointer;
+    margin: 0 auto;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: backround-color $transion, transform $transion;
 }
 
 .modal__icon-close {
-	position: absolute;
-	align-items: center;
-	justify-content: center;
-	display: inline-block;
-	cursor: pointer;
-	fill: #000;
-	transform: translate(-50%, -50%);
-	background-size: contain;
-	background-origin: border-box;
-	background-repeat: no-repeat;
-	background-position: center;
-	transition: $transion,
-		transform $transion;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    cursor: pointer;
+    fill: #000;
+    transform: translate(-50%, -50%);
+    background-size: contain;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: $transion, transform $transion;
 
-	&:hover,
-	&:focus {
-		fill: $accent-color;
-		;
-	}
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+    }
 }
 
 .form__textarea:focus {
-	border-color: rgba(33, 150, 243);
-
+    border-color: rgba(33, 150, 243);
 }
 
 .backdrop.is-hidden {
-	visibility: hidden;
-	opacity: 0;
-	pointer-events: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .backdrop {
-	position: fixed;
-	opacity: 1;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.2);
-	z-index: 1;
-	transition: opacity $transion,
-		visibility 250ms $transion;
+    position: fixed;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity $transion, visibility 250ms $transion;
 }
 
 .js-speaker-form {
-	display: block;
-	position: relative;
-	width: 100%;
-	margin: 0 auto;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .modal__title-form {
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 1.5;
-	text-align: center;
-	letter-spacing: 0.03em;
-	color: #212121;
-	margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 20px;
 }
 
 .form-list {
-	display: block;
-	margin: 0 auto;
-	margin-bottom: 20px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
 }
 
 .form__item {
-	display: flex;
-	position: relative;
-	flex-direction: column;
+    display: flex;
+    position: relative;
+    flex-direction: column;
 
-	&:not(:last-child) {
-		margin-bottom: 10px;
-	}
+    &:not(:last-child) {
+        margin-bottom: 10px;
+    }
 }
 
 .form__label {
-	margin-bottom: 7px;
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 1.16;
-	letter-spacing: 0.01em;
-	color: #757575;
-	text-align: left;
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+    text-align: left;
 }
 
 .input:focus {
-	border-color: $accent-color;
+    border-color: $accent-color;
 }
 
 .form__input {
-	position: relative;
+    position: relative;
 }
 
 .input {
-	width: 100%;
-	height: 100%;
-	padding: 14px 14px;
-	padding-left: 15px;
-	border: 1px solid rgba(33, 33, 33, 0.2);
-	border-radius: 4px;
-	transition: border-color $transion;
+    width: 100%;
+    height: 100%;
+    padding: 14px 14px;
+    padding-left: 15px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color $transion;
 
-	&:focus {
-		border-color: $accent-color;
-	}
+    &:focus {
+        border-color: $accent-color;
+    }
 }
 
 .icon-label {
-	position: absolute;
+    position: absolute;
 }
 
 .form__icon-input {
-	position: absolute;
-	top: 50%;
-	left: 14px;
-	display: inline-block;
-	transform: translateY(-50%);
-	transition: fill $transion,
-		transform $transion;
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    display: inline-block;
+    transform: translateY(-50%);
+    transition: fill $transion, transform $transion;
 
-	.input:focus+& {
-		fill: $accent-color;
-	}
+    .input:focus + & {
+        fill: $accent-color;
+    }
 }
 
 .error {
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 1.16;
-	letter-spacing: 0.01em;
-	color: rgb(239, 154, 154);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgb(239, 154, 154);
 }
 
 .icon {
-	position: absolute;
-	fill: rgba(33, 33, 33, 100);
+    position: absolute;
+    fill: rgba(33, 33, 33, 100);
 }
 
 .form__textarea {
-	width: 100%;
-	height: 120px;
-	padding: 16px 12px;
-	resize: none;
-	border: 1px solid rgba(33, 33, 33, 0.2);
-	border-radius: 4px;
-	transition: border-color $transion;
+    width: 100%;
+    height: 120px;
+    padding: 16px 12px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color $transion;
 
-	&:focus {
-		border-color: $accent-color;
-	}
+    &:focus {
+        border-color: $accent-color;
+    }
 
-	&::placeholder {
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 1.14;
-		letter-spacing: 0.01em;
-		color: rgba(117, 117, 117, 0.5);
-	}
+    &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
-
-
 .buttton-form:hover {
-	background-color: #1d7bc8;
-	transform: scale(1.03);
+    background-color: #1d7bc8;
+    transform: scale(1.03);
 }
 
 .form__checkbox {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
 
 .checkbox__icon {
-	display: inline-block;
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	width: 16px;
-	height: 15px;
-	background-color: #fff;
-	border: 2px solid #212121;
-	margin-right: 10px;
-	border-radius: 2px;
-	transition: background-color $transion;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 16px;
+    height: 15px;
+    background-color: #fff;
+    border: 2px solid #212121;
+    margin-right: 10px;
+    border-radius: 2px;
+    transition: background-color $transion;
 
-	.checkbox__input:checked+& {
-		background-color: $accent-color;
-		border-color: transparent;
-		background-image: url('../images/icons.svg/icon\ check.svg');
-		background-size: contain;
-		background-origin: border-box;
-		background-repeat: no-repeat;
-		background-position: center;
-	}
+    .checkbox__input:checked + & {
+        background-color: $accent-color;
+        border-color: transparent;
+        background-image: url('../images/icons.svg/icon\ check.svg');
+        background-size: contain;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 .checkbox__label {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 1.16;
-	letter-spacing: 0.03em;
-	color: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
 .checkbox__link {
-	color: $accent-color;
-	text-decoration: underline;
-	margin-left: 4px;
+    color: $accent-color;
+    text-decoration: underline;
+    margin-left: 4px;
 }
 
 .checkbox__input {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	clip: rect(0 0 0 0);
-	overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .form__button {
-	position: relative;
-	width: 200px;
-	height: 50px;
-	background: $accent-color;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-	border-radius: 4px;
-	font-size: 16px;
-	font-weight: 700;
-	color: #fff;
-	margin: 0 auto;
-	align-items: center;
-	justify-content: center;
-	letter-spacing: 0.06em;
-	text-align: center;
-	line-height: 1.9;
-	cursor: pointer;
-	display: block;
-	border: 1px solid transparent;
-	overflow: hidden;
-	transition: background-color$transion,
-		transform $transion,
-		box-shadow $transion;
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.06em;
+    text-align: center;
+    line-height: 1.9;
+    cursor: pointer;
+    display: block;
+    border: 1px solid transparent;
+    overflow: hidden;
+    transition: background-color$transion, transform $transion,
+        box-shadow $transion;
 
-
-	&:hover,
-	&:focus {
-		background-color: #176eb5;
-		transform: scale(1.03);
-	}
+    &:hover,
+    &:focus {
+        background-color: #176eb5;
+        transform: scale(1.03);
+    }
 }
 
+@media screen and (min-width: 768px) {
+    .modal {
+        display: inline-block;
+        position: fixed;
+        /*padding-top: 93px;*/
 
+        left: 50%;
+        top: 200px;
+        transform: translateX(-50%);
+        background: $white-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        width: 450px;
+        height: auto;
+        padding: 40px;
+        margin: 0 auto;
+        background-color: $white-color;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        transition: transform $transion;
+    }
 
+    .modal__button {
+        position: absolute;
+        cursor: pointer;
+        margin: 0 auto;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        transition: backround-color $transion, transform $transion;
+    }
 
-@media screen and (min-width:768px) {
-	.modal {
-		display: inline-block;
-		position: fixed;
-		/*padding-top: 93px;*/
+    .modal__icon-close {
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        cursor: pointer;
+        fill: #000;
+        transform: translate(-50%, -50%);
+        background-size: contain;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: $transion, transform $transion;
 
-		left: 50%;
-		top: 200px;
-		transform: translateX(-50%);
-		background: $primary-white-color;
-		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-			0px 2px 1px rgba(0, 0, 0, 0.2);
-		border-radius: 4px;
-		width: 450px;
-		height: auto;
-		padding: 40px;
-		margin: 0 auto;
-		background-color: $primary-white-color;
-		align-items: center;
-		justify-content: center;
-		z-index: 2;
-		transition: transform $transion;
-	}
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
+    }
 
-	.modal__button {
-		position: absolute;
-		cursor: pointer;
-		margin: 0 auto;
-		top: 8px;
-		right: 8px;
-		width: 30px;
-		height: 30px;
-		background-color: transparent;
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		border-radius: 50%;
-		transition: backround-color $transion,
-			transform $transion;
-	}
+    .form__textarea:focus {
+        border-color: rgba(33, 150, 243);
+    }
 
-	.modal__icon-close {
-		position: absolute;
-		align-items: center;
-		justify-content: center;
-		display: inline-block;
-		cursor: pointer;
-		fill: #000;
-		transform: translate(-50%, -50%);
-		background-size: contain;
-		background-origin: border-box;
-		background-repeat: no-repeat;
-		background-position: center;
-		transition: $transion,
-			transform $transion;
+    .backdrop.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
 
-		&:hover,
-		&:focus {
-			fill: $accent-color;
-			;
-		}
-	}
+    .backdrop {
+        position: fixed;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        transition: opacity $transion, visibility 250ms $transion;
+    }
 
-	.form__textarea:focus {
-		border-color: rgba(33, 150, 243);
+    .js-speaker-form {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
 
-	}
+    .modal__title-form {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin-bottom: 12px;
+    }
 
-	.backdrop.is-hidden {
-		visibility: hidden;
-		opacity: 0;
-		pointer-events: none;
-	}
+    .form-list {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 
-	.backdrop {
-		position: fixed;
-		opacity: 1;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.2);
-		z-index: 1;
-		transition: opacity $transion,
-			visibility 250ms $transion;
-	}
+    .form__item {
+        display: flex;
+        position: relative;
+        flex-direction: column;
 
-	.js-speaker-form {
-		display: block;
-		position: relative;
-		width: 100%;
-		margin: 0 auto;
-	}
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
 
-	.modal__title-form {
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 1.5;
-		text-align: center;
-		letter-spacing: 0.03em;
-		color: #212121;
-		margin-bottom: 12px;
-	}
+    .form__label {
+        margin-bottom: 7px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: #757575;
+        text-align: left;
+    }
 
-	.form-list {
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 20px;
-	}
+    .input:focus {
+        border-color: $accent-color;
+    }
 
-	.form__item {
-		display: flex;
-		position: relative;
-		flex-direction: column;
+    .form__input {
+        position: relative;
+    }
 
-		&:not(:last-child) {
-			margin-bottom: 10px;
-		}
-	}
+    .input {
+        width: 100%;
+        height: 100%;
+        padding: 14px 14px;
+        padding-left: 15px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border-color $transion;
 
-	.form__label {
-		margin-bottom: 7px;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 1.16;
-		letter-spacing: 0.01em;
-		color: #757575;
-		text-align: left;
-	}
+        &:focus {
+            border-color: $accent-color;
+        }
+    }
 
-	.input:focus {
-		border-color: $accent-color;
-	}
+    .icon-label {
+        position: absolute;
+    }
 
-	.form__input {
-		position: relative;
-	}
+    .form__icon-input {
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        display: inline-block;
+        transform: translateY(-50%);
+        transition: fill $transion, transform $transion;
 
-	.input {
-		width: 100%;
-		height: 100%;
-		padding: 14px 14px;
-		padding-left: 15px;
-		border: 1px solid rgba(33, 33, 33, 0.2);
-		border-radius: 4px;
-		transition: border-color $transion;
+        .input:focus + & {
+            fill: $accent-color;
+        }
+    }
 
-		&:focus {
-			border-color: $accent-color;
-		}
-	}
+    .error {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: rgb(239, 154, 154);
+    }
 
-	.icon-label {
-		position: absolute;
-	}
+    .icon {
+        position: absolute;
+        fill: rgba(33, 33, 33, 100);
+    }
 
-	.form__icon-input {
-		position: absolute;
-		top: 50%;
-		left: 14px;
-		display: inline-block;
-		transform: translateY(-50%);
-		transition: fill $transion,
-			transform $transion;
+    .form__textarea {
+        width: 100%;
+        height: 120px;
+        padding: 12px 15px;
+        resize: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border-color $transion;
 
-		.input:focus+& {
-			fill: $accent-color;
-		}
-	}
+        &:focus {
+            border-color: $accent-color;
+        }
 
-	.error {
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 1.16;
-		letter-spacing: 0.01em;
-		color: rgb(239, 154, 154);
-	}
+        &::placeholder {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
 
-	.icon {
-		position: absolute;
-		fill: rgba(33, 33, 33, 100);
-	}
+    .buttton-form:hover {
+        background-color: #1d7bc8;
+        transform: scale(1.03);
+    }
 
-	.form__textarea {
-		width: 100%;
-		height: 120px;
-		padding: 12px 15px;
-		resize: none;
-		border: 1px solid rgba(33, 33, 33, 0.2);
-		border-radius: 4px;
-		transition: border-color $transion;
+    .form__checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
 
-		&:focus {
-			border-color: $accent-color;
-		}
+    .checkbox__icon {
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 16px;
+        height: 15px;
+        background-color: #fff;
+        border: 2px solid #212121;
+        margin-right: 8px;
+        border-radius: 2px;
+        transition: background-color $transion;
 
-		&::placeholder {
-			font-weight: 400;
-			font-size: 14px;
-			line-height: 1.14;
-			letter-spacing: 0.01em;
-			color: rgba(117, 117, 117, 0.5);
-		}
-	}
+        .checkbox__input:checked + & {
+            background-color: $accent-color;
+            border-color: transparent;
+            background-image: url('../images/icons.svg/icon\ check.svg');
+            background-size: contain;
+            background-origin: border-box;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
 
+    .checkbox__label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
 
+    .checkbox__link {
+        color: $accent-color;
+        text-decoration: underline;
+        margin-left: 4px;
+    }
 
-	.buttton-form:hover {
-		background-color: #1d7bc8;
-		transform: scale(1.03);
-	}
+    .checkbox__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 
-	.form__checkbox {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-bottom: 30px;
-	}
+    .form__button {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        background: $accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.06em;
+        text-align: center;
+        line-height: 1.9;
+        cursor: pointer;
+        display: block;
+        border: 1px solid transparent;
+        overflow: hidden;
+        transition: background-color$transion, transform $transion,
+            box-shadow $transion;
 
-	.checkbox__icon {
-		display: inline-block;
-		justify-content: center;
-		text-align: center;
-		align-items: center;
-		width: 16px;
-		height: 15px;
-		background-color: #fff;
-		border: 2px solid #212121;
-		margin-right: 8px;
-		border-radius: 2px;
-		transition: background-color $transion;
-
-		.checkbox__input:checked+& {
-			background-color: $accent-color;
-			border-color: transparent;
-			background-image: url('../images/icons.svg/icon\ check.svg');
-			background-size: contain;
-			background-origin: border-box;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-	}
-
-	.checkbox__label {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 1.16;
-		letter-spacing: 0.03em;
-		color: #757575;
-	}
-
-	.checkbox__link {
-		color: $accent-color;
-		text-decoration: underline;
-		margin-left: 4px;
-	}
-
-	.checkbox__input {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		margin: -1px;
-		border: 0;
-		padding: 0;
-		clip: rect(0 0 0 0);
-		overflow: hidden;
-	}
-
-	.form__button {
-		position: relative;
-		width: 200px;
-		height: 50px;
-		background: $accent-color;
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-		border-radius: 4px;
-		font-size: 16px;
-		font-weight: 700;
-		color: #fff;
-		margin: 0 auto;
-		align-items: center;
-		justify-content: center;
-		letter-spacing: 0.06em;
-		text-align: center;
-		line-height: 1.9;
-		cursor: pointer;
-		display: block;
-		border: 1px solid transparent;
-		overflow: hidden;
-		transition: background-color$transion,
-			transform $transion,
-			box-shadow $transion;
-
-
-		&:hover,
-		&:focus {
-			background-color: #176eb5;
-			transform: scale(1.03);
-		}
-	}
+        &:hover,
+        &:focus {
+            background-color: #176eb5;
+            transform: scale(1.03);
+        }
+    }
 }
 
+@media screen and (min-width: 1200px) {
+    .modal {
+        display: inline-block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: $primary-white-color;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+            0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
 
-@media screen and (min-width:1200px) {
-	.modal {
-		display: inline-block;
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		background: $primary-white-color;
-		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-			0px 2px 1px rgba(0, 0, 0, 0.2);
-		border-radius: 4px;
+        width: 100%;
+        height: auto;
+        padding: 40px;
+        margin: 0 auto;
+        background-color: $primary-white-color;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        transition: transform $transion;
+    }
 
-		width: 100%;
-		height: auto;
-		padding: 40px;
-		margin: 0 auto;
-		background-color: $primary-white-color;
-		align-items: center;
-		justify-content: center;
-		z-index: 2;
-		transition: transform $transion;
-	}
+    .modal__button {
+        position: absolute;
+        cursor: pointer;
+        margin: 0 auto;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        transition: backround-color $transion, transform $transion;
+    }
 
-	.modal__button {
-		position: absolute;
-		cursor: pointer;
-		margin: 0 auto;
-		top: 8px;
-		right: 8px;
-		width: 30px;
-		height: 30px;
-		background-color: transparent;
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		border-radius: 50%;
-		transition: backround-color $transion,
-			transform $transion;
-	}
+    .modal__icon-close {
+        position: absolute;
+        align-items: center;
+        justify-content: center;
+        display: inline-block;
+        cursor: pointer;
+        fill: #000;
+        transform: translate(-50%, -50%);
+        background-size: contain;
+        background-origin: border-box;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: $transion, transform $transion;
 
-	.modal__icon-close {
-		position: absolute;
-		align-items: center;
-		justify-content: center;
-		display: inline-block;
-		cursor: pointer;
-		fill: #000;
-		transform: translate(-50%, -50%);
-		background-size: contain;
-		background-origin: border-box;
-		background-repeat: no-repeat;
-		background-position: center;
-		transition: $transion,
-			transform $transion;
+        &:hover,
+        &:focus {
+            fill: $accent-color;
+        }
+    }
 
-		&:hover,
-		&:focus {
-			fill: $accent-color;
-			;
-		}
-	}
+    .form__textarea:focus {
+        border-color: rgba(33, 150, 243);
+    }
 
-	.form__textarea:focus {
-		border-color: rgba(33, 150, 243);
+    .backdrop.is-hidden {
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
 
-	}
+    .backdrop {
+        position: fixed;
+        opacity: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        transition: opacity $transion, visibility 250ms $transion;
+    }
 
-	.backdrop.is-hidden {
-		visibility: hidden;
-		opacity: 0;
-		pointer-events: none;
-	}
+    .js-speaker-form {
+        display: block;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
 
-	.backdrop {
-		position: fixed;
-		opacity: 1;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.2);
-		z-index: 1;
-		transition: opacity $transion,
-			visibility 250ms $transion;
-	}
+    .modal__title-form {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 1.15;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #212121;
+        margin-bottom: 12px;
+    }
 
-	.js-speaker-form {
-		display: block;
-		position: relative;
-		width: 100%;
-		margin: 0 auto;
-	}
+    .form-list {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
 
-	.modal__title-form {
-		font-weight: 700;
-		font-size: 20px;
-		line-height: 1.15;
-		text-align: center;
-		letter-spacing: 0.03em;
-		color: #212121;
-		margin-bottom: 12px;
-	}
+    .form__item {
+        display: flex;
+        position: relative;
+        flex-direction: column;
 
-	.form-list {
-		display: block;
-		width: 100%;
-		margin: 0 auto;
-		margin-bottom: 25px;
-	}
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+    }
 
-	.form__item {
-		display: flex;
-		position: relative;
-		flex-direction: column;
+    .form__label {
+        margin-bottom: 6px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: #757575;
+        text-align: left;
+    }
 
-		&:not(:last-child) {
-			margin-bottom: 12px;
-		}
-	}
+    .input:focus {
+        border-color: $accent-color;
+    }
 
-	.form__label {
-		margin-bottom: 6px;
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 1.16;
-		letter-spacing: 0.01em;
-		color: #757575;
-		text-align: left;
-	}
+    .form__input {
+        position: relative;
+    }
 
-	.input:focus {
-		border-color: $accent-color;
-	}
+    .input {
+        width: 100%;
+        height: 100%;
+        padding: 14px 14px;
+        padding-left: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border-color $transion;
 
-	.form__input {
-		position: relative;
-	}
+        &:focus {
+            border-color: $accent-color;
+        }
+    }
 
-	.input {
-		width: 100%;
-		height: 100%;
-		padding: 14px 14px;
-		padding-left: 40px;
-		border: 1px solid rgba(33, 33, 33, 0.2);
-		border-radius: 4px;
-		transition: border-color $transion;
+    .icon-label {
+        position: absolute;
+    }
 
-		&:focus {
-			border-color: $accent-color;
-		}
-	}
+    .form__icon-input {
+        position: absolute;
+        top: 50%;
+        left: 14px;
+        display: inline-block;
+        transform: translateY(-50%);
+        transition: fill $transion, transform $transion;
 
-	.icon-label {
-		position: absolute;
-	}
+        .input:focus + & {
+            fill: $accent-color;
+        }
+    }
 
-	.form__icon-input {
-		position: absolute;
-		top: 50%;
-		left: 14px;
-		display: inline-block;
-		transform: translateY(-50%);
-		transition: fill $transion,
-			transform $transion;
+    .error {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;
+        color: rgb(239, 154, 154);
+    }
 
-		.input:focus+& {
-			fill: $accent-color;
-		}
-	}
+    .icon {
+        position: absolute;
+        fill: rgba(33, 33, 33, 100);
+    }
 
-	.error {
-		font-weight: 400;
-		font-size: 12px;
-		line-height: 1.16;
-		letter-spacing: 0.01em;
-		color: rgb(239, 154, 154);
-	}
+    .form__textarea {
+        width: 100%;
+        height: 120px;
+        padding: 12px 16px;
+        resize: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        transition: border-color $transion;
 
-	.icon {
-		position: absolute;
-		fill: rgba(33, 33, 33, 100);
-	}
+        &:focus {
+            border-color: $accent-color;
+        }
 
-	.form__textarea {
-		width: 100%;
-		height: 120px;
-		padding: 12px 16px;
-		resize: none;
-		border: 1px solid rgba(33, 33, 33, 0.2);
-		border-radius: 4px;
-		transition: border-color $transion;
+        &::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.01em;
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
 
-		&:focus {
-			border-color: $accent-color;
-		}
+    .buttton-form:hover {
+        background-color: #1d7bc8;
+        transform: scale(1.03);
+    }
 
-		&::placeholder {
-			font-weight: 400;
-			font-size: 12px;
-			line-height: 1.16;
-			letter-spacing: 0.01em;
-			color: rgba(117, 117, 117, 0.5);
-		}
-	}
+    .form__checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 35px;
+    }
 
+    .checkbox__icon {
+        display: inline-block;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+        background-color: #fff;
+        border: 2px solid #212121;
+        margin-right: 7px;
+        border-radius: 2px;
+        transition: background-color $transion;
 
+        .checkbox__input:checked + & {
+            background-color: $accent-color;
+            border-color: transparent;
+            background-image: url('../images/icons.svg/icon\ check.svg');
+            background-size: contain;
+            background-origin: border-box;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
 
-	.buttton-form:hover {
-		background-color: #1d7bc8;
-		transform: scale(1.03);
-	}
+    .checkbox__label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: #757575;
+    }
 
-	.form__checkbox {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-bottom: 35px;
-	}
+    .checkbox__link {
+        color: $accent-color;
+        text-decoration: underline;
+    }
 
-	.checkbox__icon {
-		display: inline-block;
-		justify-content: center;
-		text-align: center;
-		align-items: center;
-		width: 16px;
-		height: 16px;
-		background-color: #fff;
-		border: 2px solid #212121;
-		margin-right: 7px;
-		border-radius: 2px;
-		transition: background-color $transion;
+    .checkbox__input {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
 
-		.checkbox__input:checked+& {
-			background-color: $accent-color;
-			border-color: transparent;
-			background-image: url('../images/icons.svg/icon\ check.svg');
-			background-size: contain;
-			background-origin: border-box;
-			background-repeat: no-repeat;
-			background-position: center;
-		}
-	}
+    .form__button {
+        position: relative;
+        width: 200px;
+        height: 50px;
+        background: $accent-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+        letter-spacing: 0.06em;
+        text-align: center;
+        line-height: 1.9;
+        cursor: pointer;
+        display: block;
+        border: 1px solid transparent;
+        overflow: hidden;
+        transition: background-color$transion, transform $transion,
+            box-shadow $transion;
 
-	.checkbox__label {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-weight: 400;
-		font-size: 14px;
-		line-height: 1.71;
-		letter-spacing: 0.03em;
-		color: #757575;
-	}
-
-	.checkbox__link {
-		color: $accent-color;
-		text-decoration: underline;
-	}
-
-	.checkbox__input {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		margin: -1px;
-		border: 0;
-		padding: 0;
-		clip: rect(0 0 0 0);
-		overflow: hidden;
-	}
-
-	.form__button {
-		position: relative;
-		width: 200px;
-		height: 50px;
-		background: $accent-color;
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-		border-radius: 4px;
-		font-size: 16px;
-		font-weight: 700;
-		color: #fff;
-		margin: 0 auto;
-		align-items: center;
-		justify-content: center;
-		letter-spacing: 0.06em;
-		text-align: center;
-		line-height: 1.9;
-		cursor: pointer;
-		display: block;
-		border: 1px solid transparent;
-		overflow: hidden;
-		transition: background-color$transion,
-			transform $transion,
-			box-shadow $transion;
-
-
-		&:hover,
-		&:focus {
-			background-color: #176eb5;
-			transform: scale(1.03);
-		}
-	}
+        &:hover,
+        &:focus {
+            background-color: #176eb5;
+            transform: scale(1.03);
+        }
+    }
 }

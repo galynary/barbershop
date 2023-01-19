@@ -1,17 +1,23 @@
-    .studio-hero__button {
-    	width: 216px;
-    	height: 50px;
-    	background: $accent-color;
-    	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    	border-radius: 4px;
-    	font-size: 16px;
-    	font-weight: 700;
-    	color: #fff;
-    	text-align: center;
-    	cursor: pointer;
-    	display: inline-block;
-    	border: 1px solid transparent;
-    	overflow: hidden;
-    	transition: backround-color $transion,
-    		transform $transion;
-    }
+.button {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    width: 160.16px;
+    height: 40px;
+    border: 1px solid var(--accent-color);
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    margin-top: 45px;
+    transition: var(--transition) box-shadow 300ms linear
+        cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover,
+.button:focus {
+    background-color: var(--accent-color);
+    transform: scale(1.06);
+    box-shadow: 0px 0px 10px 1px rgba(255, 108, 0, 0.55);
+}

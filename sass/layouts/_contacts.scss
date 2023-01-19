@@ -1,0 +1,62 @@
+/*------- контакти -------*/
+.contacts {
+    width: calc(50% - 15px);
+    padding-left: 100px;
+}
+
+.contact-wrap {
+    background-color: #191c26;
+    border-image: url(../images/desctop/Bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: calc(50% - 15px) 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    z-index: 1;
+    padding: 130px 0px;
+}
+.contact-wrap .container {
+    display: flex;
+}
+.contacts__title,
+.form__title {
+    color: var(--white-color);
+}
+.contacts__address {
+    margin-bottom: 70px;
+}
+.contacts__title {
+    margin-bottom: 40px;
+}
+.contacts-time__title {
+    color: $white-color;
+
+    &::before {
+        background-color: $minor-color;
+    }
+}
+.contakts__item:not(:last-child) {
+    margin-bottom: 20px;
+}
+.contacts__address-link {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 20px;
+}
+.contacts__address-link,
+.contacts__tell,
+.contacts__mail,
+.contacts-time__text {
+    font-size: $after-title-font-size;
+    line-height: 1.66;
+    letter-spacing: 0.02em;
+    color: $minor-color;
+}
+.contacts__mail {
+    text-decoration-line: underline;
+}
+.contacts__tell,
+.contacts__mail,
+.contacts-time__text {
+    font-weight: 400;
+}

@@ -1,0 +1,72 @@
+/*------- наші переваги -------*/
+.benefists .container {
+    display: flex;
+}
+.benefist__contant {
+    max-width: 500px;
+    padding-top: 9px;
+}
+.benefists__card {
+    width: calc(50% - 15px);
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+}
+.benefists-pre__title {
+    color: $main-color;
+
+    &::before {
+        background-color: $main-color;
+    }
+}
+.benefists-after__title {
+    color: $second-main-color;
+}
+.benefists__list {
+    display: flex;
+    width: 370px;
+    flex-wrap: wrap;
+}
+.benefists__item span {
+    font-weight: 700;
+    font-size: $section-title-font-size;
+    line-height: 1.35;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: $main-color;
+}
+.benefists__item {
+    display: inline-block;
+    width: 170px;
+    height: 133px;
+    padding: 20px 24px;
+    background-color: #f7f7f7;
+    margin-bottom: 6px;
+
+    &:nth-child(even) {
+        margin-top: 30px;
+    }
+    &:nth-child(odd) {
+        margin-right: 30px;
+    }
+}
+.benefists-item__top {
+    display: flex;
+    justify-content: center;
+}
+.benefists__item sup {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 0.2;
+    margin-top: 25px;
+    color: $accent-color;
+    text-align: center;
+}
+.hero__link,
+.benefists__text {
+    font-weight: 600;
+    font-size: $pre__title-font-size;
+    line-height: 1.36;
+    text-align: center;
+    color: $main-color;
+}
