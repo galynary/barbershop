@@ -749,11 +749,14 @@ address {
     margin-left: 4px;
 }
 .form__button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+    align-items: center;
     color: var(--main-color);
     overflow: hidden;
-    transition: background-color 250ms linear cubic-bezier(0.4, 0, 0.2, 1),
-        transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--transition);
 }
 
 /*------- галарея -------*/
@@ -785,29 +788,28 @@ address {
     margin-bottom: 44px;
 }
 .online__field {
-	position: relative;
-	margin-bottom: 44px;
-	
+    position: relative;
+    margin-bottom: 44px;
 }
 .online__field:last-child {
-	width: 100%;
+    width: 100%;
 }
 .online__label {
-	position: absolute;
-	left:0;
-	top:0;
-	font-weight: 600;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-weight: 600;
     font-size: 11px;
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
     color: rgba(157, 164, 189, 0.4);
-	transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1)
+    transition: transform 250ms linear cubic-bezier(0.4, 0, 0.2, 1);
 }
 .online__label:focus,
 .online__label:hover {
-	color: var(--white-color);
-	transform: translateY(-100%);
+    color: var(--white-color);
+    transform: translateY(-100%);
 }
 .online__textarea {
     width: 570px;
@@ -842,11 +844,11 @@ address {
     width: 270px;
     height: 24px;
 }
-.online__item:focus + .online__label .online__item:not(:placeholder-shown) + .online__label {
-	color: var(--white-color);
-	transform: translateY(-100%);
+.online__item:focus + .online__label,
+.online__item:not(:placeholder-shown) + .online__label {
+    color: var(--white-color);
+    transform: translateY(-100%);
 }
-
 
 .online__item {
     border: none;
@@ -861,10 +863,6 @@ address {
 .online__item:focus {
     border-color: 1px solid var(--white-color);
 }
-
-
-
-
 
 /*------- контакти -------*/
 .contacts {
