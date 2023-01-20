@@ -70,8 +70,7 @@ address {
     background-color: transparent;
     cursor: pointer;
     margin-top: 45px;
-    transition: var(--transition) box-shadow 300ms linear
-        cubic-bezier(0.4, 0, 0.2, 1);
+    transition: var(--transition);
 }
 .button:hover,
 .button:focus {
@@ -81,7 +80,7 @@ address {
 }
 
 .section {
-    padding: 130px 0px;
+    padding: 110px 0px;
 }
 
 .container {
@@ -204,6 +203,7 @@ address {
     padding-top: 0px;
     width: 100%;
 }
+
 .hero__soc {
     display: flex;
     width: 100px;
@@ -219,6 +219,7 @@ address {
     transform-origin: bottom left;
     justify-content: flex-end;
 }
+
 .hero__list::before {
     content: '';
     width: 60px;
@@ -354,6 +355,7 @@ address {
             rgba(17, 19, 25, 1)
         ),
         url(../images/desctop/img.jpg);
+    max-width: 1600px;
 }
 .prices-pre__title {
     color: rgba(157, 164, 189, 0.6);
@@ -409,6 +411,10 @@ address {
 }
 .prices-list__text:last-child {
     order: 1;
+}
+.prices__btn {
+    display: inline-block;
+    align-items: center;
 }
 
 /*------- наші переваги -------*/
@@ -473,6 +479,7 @@ address {
     color: var(--accent-color);
     text-align: center;
 }
+.footer__link,
 .hero__link,
 .benefists__text {
     font-weight: 600;
@@ -771,6 +778,11 @@ address {
 .gallery__item {
     width: calc((100% - 90px) / 4);
 }
+.gallery__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 /*------- онлайн-форм -------*/
 .online__form {
     display: flex;
@@ -824,13 +836,6 @@ address {
 .online__textarea:focus {
     border-bottom: 1px solid var(--white-color);
 }
-/*online__textarea::placeholder {
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.4);*/
 
 .online__message {
     width: 100%;
@@ -855,6 +860,7 @@ address {
     font-size: var(--text-font-size);
     outline: none;
     margin-bottom: 44px;
+    transition: var(--transition);
 }
 .online__item:hover,
 .online__item:focus {
@@ -921,4 +927,22 @@ address {
 .contacts__mail,
 .contacts-time__text {
     font-weight: 400;
+}
+/*------- футер -------*/
+.footer__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 56px 0px;
+}
+.footer__list {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.footer__list::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    background-color: var(--main-color);
+    align-items: center;
 }
