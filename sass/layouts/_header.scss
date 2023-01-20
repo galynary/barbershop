@@ -7,10 +7,7 @@
     width: 100%;
     padding: 32px 0px;
 }
-.header .container {
-    /*  display: flex;
-    align-items: center;*/
-}
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -40,11 +37,11 @@
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    color: $white-color;
+    color: #fff;
 
     &:hover,
     &:focus {
-        color: $accent-color;
+        color: #ff6c00;
     }
 }
 .header__connect {

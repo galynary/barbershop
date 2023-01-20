@@ -110,10 +110,7 @@ address {
     width: 100%;
     padding: 32px 0px;
 }
-.header .container {
-    /*  display: flex;
-    align-items: center;*/
-}
+
 .header-nav {
     display: flex;
     align-items: center;
