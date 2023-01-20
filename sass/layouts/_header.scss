@@ -21,12 +21,11 @@
     display: block;
     width: 72px;
     height: 59px;
-
-    &:focus,
-    &:hover {
-        transform: rotate(720deg);
-        transition-duration: 5000ms;
-    }
+}
+.icon__logo:focus,
+.icon__logo:hover {
+    transform: rotate(720deg);
+    transition-duration: 5000ms;
 }
 .navigation__list {
     display: flex;
@@ -37,12 +36,11 @@
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    color: #fff;
-
-    &:hover,
-    &:focus {
-        color: #ff6c00;
-    }
+    color: var(--white-color);
+}
+.navigation__link:hover,
+.hero__link:focus {
+    color: var(--accent-color);
 }
 .header__connect {
     display: flex;
@@ -52,24 +50,26 @@
     margin-left: 200px;
 }
 .navigation__btn {
-    margin-top: 0px;
+    margin-bottom: 0px;
     overflow: hidden;
     transition: var(--transition);
+}
 
-    &:hover,
-    &:focus {
-        color: $white-color;
-    }
+.navigation__btn:hover,
+.navigation__btn:focus {
+    color: var(--white-color);
+
+    /* transform: scale3d(2);*/
 }
 .ripple {
     overflow: hidden;
     z-index: 1;
     position: absolute;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 10px;
+    height: 10px;
     background-color: #e2aa0fd0;
-    border-color: $accent-color;
+    border-color: var(--accent-color);
     animation: button-circle 2s ease forwards;
 }
 @keyframes button-circle {
@@ -87,6 +87,6 @@
     font-size: 12px;
     line-height: 1.33;
     letter-spacing: 0.1em;
-    color: $white-color;
+    color: var(--white-color);
     text-transform: uppercase;
 }

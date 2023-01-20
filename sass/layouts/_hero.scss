@@ -23,7 +23,7 @@
         content: '';
         width: 60px;
         height: 1px;
-        background-color: $main-color;
+        background-color: var(--main-color);
         align-items: center;
     }
 }
@@ -60,7 +60,7 @@
 
 .pre__title {
     font-weight: 600;
-    font-size: $pre__title-font-size;
+    font-size: var(--pre__title-font-size);
     line-height: 1.36;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -83,17 +83,17 @@
     font-size: 72px;
     line-height: 1.18;
     letter-spacing: 0.05em;
-    color: $white-color;
+    color: var(--white-color);
     margin-bottom: 20px;
 }
 .hero-title__after {
     width: 360px;
-    color: $second-main-color;
+    color: var(--second-main-color);
 }
 
 .after__title {
     font-weight: 400;
-    font-size: $after-title-font-size;
+    font-size: var(--after-title-font-size);
     line-height: 1.66;
     letter-spacing: 0.02em;
 }

@@ -1,13 +1,14 @@
 /*------- про нас -------*/
 .about-pre__title {
-    color: $main-color;
+    color: var(--main-color);
 
     &::before {
-        background-color: $main-color;
+        background-color: var(--main-color);
     }
 }
 .after__title-about {
-    color: $second-main-color;
+    color: var(--second-main-color);
+    margin-bottom: 20px;
 }
 .about-section {
     display: flex;
@@ -18,26 +19,27 @@
 }
 .section__title {
     font-weight: 700;
-    font-size: $section-title-font-size;
+    font-size: var(--section-title-font-size);
     line-height: 1.16;
     letter-spacing: 0.05em;
-    color: $main-color;
+    color: var(--main-color);
     margin-bottom: 20px;
 }
 .about__text {
     font-weight: 400;
-    font-size: $text-font-size;
+    font-size: var(--text-font-size);
     line-height: 1.85;
     letter-spacing: 0.02em;
-    color: $second-main-color;
+    color: var(--second-main-color);
+    margin-bottom: 42px;
 }
 .about__btn {
-    color: $main-color;
+    color: var(--main-color);
 
     &:hover,
     &:focus {
-        color: $white-color;
-        background-color: $accent-color;
+        color: var(--white-color);
+        background-color: var(--accent-color);
         transform: rotate(180deg);
         transition-delay: 0ms;
         transition-duration: 1500ms;

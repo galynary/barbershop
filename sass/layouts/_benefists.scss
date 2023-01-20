@@ -13,14 +13,14 @@
     margin-right: 30px;
 }
 .benefists-pre__title {
-    color: $main-color;
+    color: var(--main-color);
 
     &::before {
-        background-color: $main-color;
+        background-color: var(--main-color);
     }
 }
 .benefists-after__title {
-    color: $second-main-color;
+    color: var(--second-main-color);
 }
 .benefists__list {
     display: flex;
@@ -29,11 +29,11 @@
 }
 .benefists__item span {
     font-weight: 700;
-    font-size: $section-title-font-size;
+    font-size: var(--section-title-font-size);
     line-height: 1.35;
     text-align: center;
     letter-spacing: 0.05em;
-    color: $main-color;
+    color: var(--main-color);
 }
 .benefists__item {
     display: inline-block;
@@ -59,14 +59,14 @@
     font-size: 16px;
     line-height: 0.2;
     margin-top: 25px;
-    color: $accent-color;
+    color: var(--accent-color);
     text-align: center;
 }
 .hero__link,
 .benefists__text {
     font-weight: 600;
-    font-size: $pre__title-font-size;
+    font-size: var(--pre__title-font-size);
     line-height: 1.36;
     text-align: center;
-    color: $main-color;
+    color: var(--main-color);
 }
