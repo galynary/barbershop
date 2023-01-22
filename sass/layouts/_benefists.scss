@@ -19,6 +19,11 @@
         background-color: var(--main-color);
     }
 }
+.exclamationMark {
+    transform: rotate(180deg);
+    transition-delay: 0ms;
+}
+
 .benefists-after__title {
     color: var(--second-main-color);
 }

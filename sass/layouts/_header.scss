@@ -12,16 +12,17 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 25px;
 }
 .header__logo {
-    margin-right: 130px;
+    margin-right: 170px;
 }
 .icon__logo {
     display: block;
     width: 72px;
     height: 59px;
+    fill: var(--white-color);
 }
+
 .icon__logo:focus,
 .icon__logo:hover {
     transform: rotate(720deg);
@@ -47,20 +48,21 @@
     margin-left: auto;
     gap: 30px;
     align-items: center;
-    margin-left: 200px;
+    padding-right: 20px;
 }
 .navigation__btn {
     margin-bottom: 0px;
     overflow: hidden;
-    transition: var(--transition);
+    color: var(--white-color);
 }
 
 .navigation__btn:hover,
 .navigation__btn:focus {
     color: var(--white-color);
-
-    /* transform: scale3d(2);*/
 }
+
+/* transform: scale3d(2);*/
+
 .ripple {
     overflow: hidden;
     z-index: 1;
@@ -89,4 +91,24 @@
     letter-spacing: 0.1em;
     color: var(--white-color);
     text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+    .navigation__list,
+    .header__connect {
+        display: flex;
+    }
+}
+@media screen and (min-width: 768px) {
+    .icon__logo {
+        fill: var(--maine-color);
+    }
+}
+@media screen and (min-width: 480px) {
+    .header-nav {
+        padding: 0px 30px;
+    }
+    .navigation__list,
+    .header__connect {
+        display: none;
+    }
 }

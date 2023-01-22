@@ -12,7 +12,7 @@
 }
 .about-section {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
 }
 .about__content {
     max-width: 470px;
@@ -25,13 +25,14 @@
     color: var(--main-color);
     margin-bottom: 20px;
 }
+
 .about__text {
     font-weight: 400;
     font-size: var(--text-font-size);
     line-height: 1.85;
     letter-spacing: 0.02em;
     color: var(--second-main-color);
-    margin-bottom: 42px;
+    margin-bottom: 40px;
 }
 .about__btn {
     color: var(--main-color);
@@ -48,5 +49,10 @@
 
 .about__list {
     display: flex;
-    column-gap: 30px;
+    gap: 30px;
+}
+@media screen and (min-width: 480px) {
+    .about__list {
+        display: none;
+    }
 }

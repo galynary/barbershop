@@ -1,26 +1,20 @@
 /*------- контакти -------*/
-.contacts {
-    width: calc(50% - 15px);
-    padding-left: 100px;
-    .contacts {
-        background-position: right;
-        background-size: 100%;
-        background-image: url(../images/desctop/Bg.png);
-    }
-}
-
-.contact-wrap {
+.section-contact {
     background-color: #191c26;
-    max-width: 1600px;
     background-position: right;
-    background-repeat: no-repeat;
-    background-size: calc(50% - 15px) 100%;
     background-image: url(../images/desctop/Bg.png);
-    z-index: 1;
+    background-size: calc((100% - 30px) / 2) 100%;
+    max-width: 1600px;
+    background-repeat: no-repeat;
     padding: 130px 0px;
+    z-index: 1;
 }
-.contact-wrap .container {
+.barbers__address {
+    padding-left: 100px;
+}
+.contact-wrap {
     display: flex;
+    padding: 15px;
 }
 .contacts__title,
 .form__title {
@@ -63,4 +57,7 @@
 .contacts__mail,
 .contacts-time__text {
     font-weight: 400;
+}
+.online__button {
+    color: var(--white-color);
 }
