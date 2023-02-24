@@ -4,16 +4,15 @@
     line-height: 1.33;
     letter-spacing: 0.09em;
     text-transform: uppercase;
-    color: var(--white-color);
     width: 160.16px;
     height: 40px;
     border: 1px solid var(--accent-color);
     border-radius: 25px;
+    display: inline-block;
     background-color: transparent;
     cursor: pointer;
-    margin-top: 45px;
-    transition: var(--transition) box-shadow 300ms linear
-        cubic-bezier(0.4, 0, 0.2, 1);
+    /* margin-top: 45px;*/
+    transition: transform var(--transition), box-shadow var(--transition);
 }
 .button:hover,
 .button:focus {

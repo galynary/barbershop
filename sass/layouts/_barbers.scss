@@ -1,9 +1,9 @@
 /*------- наші працівники -------*/
 .barbers-pre__title {
-    color: $main-color;
+    color: var(--main-color);
 
     &::before {
-        background-color: $main-color;
+        background-color: var(--main-color);
     }
 }
 .barbers__title {
@@ -43,7 +43,7 @@
     top: 0;
     left: 0;
     font-size: 16px;
-    color: $white-color;
+    color: var(--white-color);
     font-weight: 600;
     line-height: 1.8;
     background-color: rgba(255, 106, 0, 0.788);
@@ -62,21 +62,21 @@
 }
 .barbers-item__title {
     font-weight: 400;
-    font-size: $after-title-font-size;
+    font-size: var(--after-title-font-size);
     line-height: 1.38;
     text-align: center;
     letter-spacing: 0.02em;
-    color: $main-color;
+    color: var(--main-color);
     margin-bottom: 8px;
 }
 
 .barbers-item__text {
     font-weight: 400;
-    font-size: $text-font-size;
+    font-size: var(--text-font-size);
     line-height: 1.35;
     text-align: center;
     letter-spacing: 0.02em;
-    color: $accent-color;
+    color: var(--accent-color);
 }
 .barbers__social {
     display: flex;
@@ -91,7 +91,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: $transition;
+    transition: var(--transition);
 
     &:focus,
     &:hover {
@@ -99,11 +99,11 @@
     }
 }
 .barbers-social__icon {
-    fill: $main-color;
+    fill: var(--main-color);
     transition: fill 300ms linear;
 
     &:focus,
     &:hover {
-        fill: $white-color;
+        fill: var(--white-color);
     }
 }

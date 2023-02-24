@@ -1,0 +1,17 @@
+.pre__title {
+    font-weight: 600;
+    font-size: var(--pre__title-font-size);
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: '';
+        width: 60px;
+        height: 1px;
+    }
+}

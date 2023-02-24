@@ -4,7 +4,7 @@
     right: auto;
     top: 105px;
     transform: translateX(-50%);
-    background: $white-color;
+    background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -12,11 +12,11 @@
     width: 100vw;
     padding: 40px;
     margin: 0 auto;
-    background-color: $white-color;
+    background-color: var(--white-color);
     align-items: center;
     justify-content: center;
     z-index: 2;
-    transition: transform $transion;
+    transition: transform var(--transion);
 }
 
 .modal__button {
@@ -30,7 +30,8 @@
     background-color: transparent;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    transition: backround-color $transion, transform $transion;
+    transition: backround-colorvar(--transion),
+        transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal__icon-close {
@@ -45,11 +46,11 @@
     background-origin: border-box;
     background-repeat: no-repeat;
     background-position: center;
-    transition: $transion, transform $transion;
+    transition: transform var(--transion);
 
     &:hover,
     &:focus {
-        fill: $accent-color;
+        fill: var(--accent-color);
     }
 }
 
@@ -72,7 +73,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     z-index: 1;
-    transition: opacity $transion, visibility 250ms $transion;
+    transition: opacity var(--transion), visibility var(--transion);
 }
 
 .js-speaker-form {
@@ -119,7 +120,7 @@
 }
 
 .input:focus {
-    border-color: $accent-color;
+    border-color: var(--accent-color);
 }
 
 .form__input {
@@ -133,10 +134,10 @@
     padding-left: 15px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color $transion;
+    transition: border-colorvar(--transion);
 
     &:focus {
-        border-color: $accent-color;
+        border-color: var(--accent-color);
     }
 }
 
@@ -150,10 +151,10 @@
     left: 14px;
     display: inline-block;
     transform: translateY(-50%);
-    transition: fill $transion, transform $transion;
+    transition: fill var(--transion), transform var(--transion);
 
     .input:focus + & {
-        fill: $accent-color;
+        fill: var(--accent-color);
     }
 }
 
@@ -177,10 +178,10 @@
     resize: none;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    transition: border-color $transion;
+    transition: border-color var(--transion);
 
     &:focus {
-        border-color: $accent-color;
+        border-color: var(--accent-color);
     }
 
     &::placeholder {
@@ -215,10 +216,10 @@
     border: 2px solid #212121;
     margin-right: 10px;
     border-radius: 2px;
-    transition: background-color $transion;
+    transition: background-color var(--transion);
 
     .checkbox__input:checked + & {
-        background-color: $accent-color;
+        background-color: var(--accent-color);
         border-color: transparent;
         background-image: url('../images/icons.svg/icon\ check.svg');
         background-size: contain;
@@ -240,7 +241,7 @@
 }
 
 .checkbox__link {
-    color: $accent-color;
+    color: var(--accent-color);
     text-decoration: underline;
     margin-left: 4px;
 }
@@ -260,7 +261,7 @@
     position: relative;
     width: 200px;
     height: 50px;
-    background: $accent-color;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-size: 16px;
@@ -276,8 +277,8 @@
     display: block;
     border: 1px solid transparent;
     overflow: hidden;
-    transition: background-color$transion, transform $transion,
-        box-shadow $transion;
+    transition: background-colorvar(--transion), transform var(--transion),
+        box-shadow var(--transion);
 
     &:hover,
     &:focus {
@@ -295,7 +296,7 @@
         left: 50%;
         top: 200px;
         transform: translateX(-50%);
-        background: $white-color;
+        background: var(--white-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
             0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
@@ -303,11 +304,11 @@
         height: auto;
         padding: 40px;
         margin: 0 auto;
-        background-color: $white-color;
+        background-color: var(--white-color);
         align-items: center;
         justify-content: center;
         z-index: 2;
-        transition: transform $transion;
+        transition: transform var(--transion);
     }
 
     .modal__button {
@@ -321,7 +322,7 @@
         background-color: transparent;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
-        transition: backround-color $transion, transform $transion;
+        transition: backround-color var(--transion), transform var(--transion);
     }
 
     .modal__icon-close {
@@ -336,11 +337,11 @@
         background-origin: border-box;
         background-repeat: no-repeat;
         background-position: center;
-        transition: $transion, transform $transion;
+        transition: var(--transion), transform var(--transion);
 
         &:hover,
         &:focus {
-            fill: $accent-color;
+            fill: var(--accent-color);
         }
     }
 
@@ -363,7 +364,7 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.2);
         z-index: 1;
-        transition: opacity $transion, visibility 250ms $transion;
+        transition: opacity var(--transion), visibility var(--transion);
     }
 
     .js-speaker-form {
@@ -410,7 +411,7 @@
     }
 
     .input:focus {
-        border-color: $accent-color;
+        border-color: var(--accent-color);
     }
 
     .form__input {
@@ -424,10 +425,10 @@
         padding-left: 15px;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
-        transition: border-color $transion;
+        transition: border-color var(--transion);
 
         &:focus {
-            border-color: $accent-color;
+            border-color: var(--accent-color);
         }
     }
 
@@ -441,10 +442,10 @@
         left: 14px;
         display: inline-block;
         transform: translateY(-50%);
-        transition: fill $transion, transform $transion;
+        transition: fill var(--transion), transform var(--transion);
 
         .input:focus + & {
-            fill: $accent-color;
+            fill: var(--accent-color);
         }
     }
 
@@ -468,10 +469,10 @@
         resize: none;
         border: 1px solid rgba(33, 33, 33, 0.2);
         border-radius: 4px;
-        transition: border-color $transion;
+        transition: border-color var(--transion);
 
         &:focus {
-            border-color: $accent-color;
+            border-color: var(--accent-color);
         }
 
         &::placeholder {
@@ -506,10 +507,10 @@
         border: 2px solid #212121;
         margin-right: 8px;
         border-radius: 2px;
-        transition: background-color $transion;
+        transition: background-color var(--transion);
 
         .checkbox__input:checked + & {
-            background-color: $accent-color;
+            background-color: var(--accent-color);
             border-color: transparent;
             background-image: url('../images/icons.svg/icon\ check.svg');
             background-size: contain;
@@ -531,7 +532,7 @@
     }
 
     .checkbox__link {
-        color: $accent-color;
+        color: var(--accent-color);
         text-decoration: underline;
         margin-left: 4px;
     }
@@ -551,7 +552,7 @@
         position: relative;
         width: 200px;
         height: 50px;
-        background: $accent-color;
+        background: var(--accent-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         font-size: 16px;
@@ -567,8 +568,8 @@
         display: block;
         border: 1px solid transparent;
         overflow: hidden;
-        transition: background-color$transion, transform $transion,
-            box-shadow $transion;
+        transition: background-color var(--transion), transform var(--transion),
+            box-shadow var(--transion);
 
         &:hover,
         &:focus {
@@ -578,14 +579,14 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+/*@media screen and (min-width: 1200px) {
     .modal {
         display: inline-block;
         position: fixed;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background: $primary-white-color;
+        background: var(--primary-white-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
             0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 4px;
@@ -594,11 +595,11 @@
         height: auto;
         padding: 40px;
         margin: 0 auto;
-        background-color: $primary-white-color;
+        background-color: var(--primary-white-color);
         align-items: center;
         justify-content: center;
         z-index: 2;
-        transition: transform $transion;
+        transition: transform var(--transion);
     }
 
     .modal__button {
@@ -612,7 +613,7 @@
         background-color: transparent;
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
-        transition: backround-color $transion, transform $transion;
+        transition: backround-color var(--transion), transform var(--transion);
     }
 
     .modal__icon-close {
@@ -627,11 +628,11 @@
         background-origin: border-box;
         background-repeat: no-repeat;
         background-position: center;
-        transition: $transion, transform $transion;
+        transition: var(--transion), transform var(--transion);
 
         &:hover,
         &:focus {
-            fill: $accent-color;
+            fill: var(--accent-color);
         }
     }
 
@@ -654,8 +655,7 @@
         height: 100%;
         background-color: rgba(0, 0, 0, 0.2);
         z-index: 1;
-        transition: opacity $transion, visibility 250ms $transion;
-    }
+        transition: opacity var(--transion), visibility var(--transion);
 
     .js-speaker-form {
         display: block;
@@ -702,7 +702,7 @@
     }
 
     .input:focus {
-        border-color: $accent-color;
+        border-color: var(--accent-color);
     }
 
     .form__input {
@@ -719,7 +719,7 @@
         transition: border-color $transion;
 
         &:focus {
-            border-color: $accent-color;
+            border-color: var(--accent-color);
         }
     }
 
@@ -734,11 +734,12 @@
         display: inline-block;
         transform: translateY(-50%);
         transition: fill $transion, transform $transion;
+    }
 
         .input:focus + & {
             fill: $accent-color;
         }
-    }
+    
 
     .error {
         font-weight: 400;
@@ -763,7 +764,7 @@
         transition: border-color $transion;
 
         &:focus {
-            border-color: $accent-color;
+            border-color: var(--accent-color);
         }
 
         &::placeholder {
@@ -798,10 +799,11 @@
         border: 2px solid #212121;
         margin-right: 7px;
         border-radius: 2px;
-        transition: background-color $transion;
+        transition: background-color var(--transion);
+    }
 
         .checkbox__input:checked + & {
-            background-color: $accent-color;
+            background-color: var(--accent-color);
             border-color: transparent;
             background-image: url('../images/icons.svg/icon\ check.svg');
             background-size: contain;
@@ -809,7 +811,7 @@
             background-repeat: no-repeat;
             background-position: center;
         }
-    }
+    
 
     .checkbox__label {
         display: flex;
@@ -823,7 +825,7 @@
     }
 
     .checkbox__link {
-        color: $accent-color;
+        color: var(--accent-color);
         text-decoration: underline;
     }
 
@@ -842,7 +844,7 @@
         position: relative;
         width: 200px;
         height: 50px;
-        background: $accent-color;
+        background: var(--accent-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         font-size: 16px;
@@ -866,5 +868,4 @@
             background-color: #176eb5;
             transform: scale(1.03);
         }
-    }
-}
+    }*/

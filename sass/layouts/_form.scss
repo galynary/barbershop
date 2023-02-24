@@ -1,12 +1,30 @@
 /*------- онлайн-форм -------*/
+/*.contact-wrap {
+   max-width: 1600px;
+    background-position: right;
+    background-size: calc((100% - var(--gap))/2) 100%;
+        background-color: #191c26;
+    background-image: url(../img/contact-bg-mob.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+}*/
 .online__form {
     display: flex;
     flex-wrap: wrap;
+    gap: 7px;
     justify-content: space-between;
 }
 .contacts__form {
+    /* background-color: #191c26;
+    width: calc(50% - 15px);*/
     width: calc(50% - 15px);
     margin-right: 30px;
+}
+
+.contacts {
+    width: calc(50% - 15px);
+    padding: 30px;
 }
 .form__title {
     margin-bottom: 44px;
@@ -32,7 +50,7 @@
 
     &:focus,
     &:hover {
-        color: $white-color;
+        color: var(--white-color);
         transform: translateY(-100%);
     }
 }
@@ -41,16 +59,17 @@
     height: 76px;
     resize: none;
     border: none;
-    border-bottom: 1px solid $minor-color;
+    border-bottom: 1px solidvar(--minor-color);
     background-color: transparent;
-    color: $white-color;
-    font-size: $text-font-size;
+    color: var(--white-color);
+    font-size: var(--text-font-size);
     outline: none;
     margin-bottom: 44px;
-}
-&:hover,
-&:focus {
-    border-bottom: 1px solid $white-color;
+
+    &:hover,
+    &:focus {
+        border-bottom: 1px solid var(--white-color);
+    }
 }
 
 .online__message {
@@ -64,21 +83,21 @@
 }
 .online__item:focus + .online__label,
 .online__item:not(:placeholder-shown) + .online__label {
-    color: $white-color;
+    color: var(--white-color);
     transform: translateY(-100%);
 }
 
 .online__item {
     border: none;
-    border-bottom: 1px solid $minor-color;
+    border-bottom: 1px solid var(--minor-color);
     background-color: transparent;
-    color: $white-color;
-    font-size: $text-font-size;
+    color: var(--white-color);
+    font-size: var(--text-font-size);
     outline: none;
     margin-bottom: 44px;
 
     &:hover,
     &:focus {
-        border-color: 1px solid $minor-color;
+        border-color: 1px solid var(--minor-color);
     }
 }

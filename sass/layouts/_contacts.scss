@@ -1,22 +1,20 @@
 /*------- контакти -------*/
-.contacts {
-    width: calc(50% - 15px);
+.section-contact {
+    background-color: #191c26;
+    background-position: right;
+    background-image: url(../images/desctop/Bg.png);
+    background-size: calc((100% - 30px) / 2) 100%;
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    padding: 130px 0px;
+    z-index: 1;
+}
+.barbers__address {
     padding-left: 100px;
 }
-
 .contact-wrap {
-    background-color: #191c26;
-    border-image: url(../images/desctop/Bg.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: calc(50% - 15px) 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-    z-index: 1;
-    padding: 130px 0px;
-}
-.contact-wrap .container {
     display: flex;
+    padding: 15px;
 }
 .contacts__title,
 .form__title {
@@ -29,10 +27,10 @@
     margin-bottom: 40px;
 }
 .contacts-time__title {
-    color: $white-color;
+    color: var(--white-color);
 
     &::before {
-        background-color: $minor-color;
+        background-color: var(--minor-color);
     }
 }
 .contakts__item:not(:last-child) {
@@ -47,10 +45,10 @@
 .contacts__tell,
 .contacts__mail,
 .contacts-time__text {
-    font-size: $after-title-font-size;
+    font-size: var(--after-title-font-size);
     line-height: 1.66;
     letter-spacing: 0.02em;
-    color: $minor-color;
+    color: var(--minor-color);
 }
 .contacts__mail {
     text-decoration-line: underline;
@@ -59,4 +57,7 @@
 .contacts__mail,
 .contacts-time__text {
     font-weight: 400;
+}
+.online__button {
+    color: var(--white-color);
 }
