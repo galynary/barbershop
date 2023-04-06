@@ -5,27 +5,37 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+	margin: 0;
 }
+
 ul {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: var(--primary-text-color);
+	background-color: var(--primary-background-color);
 }
+
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
 }
+
+.images {
+	box-shadow: var(--box-shadow);
+}
+
 .list {
-  list-style: none;
+	list-style: none;
 }
+
 .link {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
